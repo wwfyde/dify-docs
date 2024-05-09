@@ -1,10 +1,10 @@
 ---
-description: Learn about the Different Tools Supported by Dify.
+description: Learn about the Different Tools Supported by MoLook.
 ---
 
 # Tool Configuration
 
-Dify supports various tools to enhance your application's capabilities. Each tool has unique features and parameters, so select a tool that suits your application's needs. **Obtain the API key from the tool provider's official website before using it in Dify.**
+MoLook supports various tools to enhance your application's capabilities. Each tool has unique features and parameters, so select a tool that suits your application's needs. **Obtain the API key from the tool provider's official website before using it in MoLook.**
 
 
 ## Tools Integration Guides

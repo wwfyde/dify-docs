@@ -2,7 +2,7 @@
 
 ## Getting Started
 
-Since the Dify API Extension requires a publicly accessible internet address as an API Endpoint, we need to deploy our API extension to a public internet address. Here, we use Cloudflare Workers for deploying our API extension.
+Since the MoLook API Extension requires a publicly accessible internet address as an API Endpoint, we need to deploy our API extension to a public internet address. Here, we use Cloudflare Workers for deploying our API extension.
 
 We clone the [Example GitHub Repository](https://github.com/crazywoola/dify-extension-workers), which contains a simple API extension. We can modify this as a base.
 
@@ -13,7 +13,7 @@ cp wrangler.toml.example wrangler.toml
 
 Open the `wrangler.toml` file, and modify `name` and `compatibility_date` to your application's name and compatibility date.
 
-An important configuration here is the `TOKEN` in `vars`, which you will need to provide when adding the API extension in Dify. For security reasons, it's recommended to use a random string as the Token. You should not write the Token directly in the source code but pass it via environment variables. Thus, do not commit your wrangler.toml to your code repository.
+An important configuration here is the `TOKEN` in `vars`, which you will need to provide when adding the API extension in MoLook. For security reasons, it's recommended to use a random string as the Token. You should not write the Token directly in the source code but pass it via environment variables. Thus, do not commit your wrangler.toml to your code repository.
 
 ```toml
 name = "dify-extension-example"
@@ -41,9 +41,9 @@ This repository simplifies all configurations except for business logic. You can
 npm run deploy
 ```
 
-After successful deployment, you will get a public internet address, which you can add in Dify as an API Endpoint. Please note not to miss the `endpoint` path.
+After successful deployment, you will get a public internet address, which you can add in MoLook as an API Endpoint. Please note not to miss the `endpoint` path.
 
-<figure><img src="../.gitbook/assets/api_extension_edit.png" alt=""><figcaption><p>Adding API Endpoint in Dify</p></figcaption></figure>
+<figure><img src="../.gitbook/assets/api_extension_edit.png" alt=""><figcaption><p>Adding API Endpoint in MoLook</p></figcaption></figure>
 
 <figure><img src="../.gitbook/assets/app_tools_edit.png" alt=""><figcaption><p>Adding API Tool in the App edit page</p></figcaption></figure>
 

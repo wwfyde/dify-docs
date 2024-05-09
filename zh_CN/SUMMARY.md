@@ -2,7 +2,7 @@
 
 ## 入门 <a href="#getting-started" id="getting-started"></a>
 
-* [欢迎使用 Dify](README.md)
+* [欢迎使用 MoLook](README.md)
   * [特性与技术规格](getting-started/readme/features-and-specifications.md)
   * [模型供应商列表](getting-started/readme/model-providers.md)
 * [使用云服务](getting-started/cloud.md)
@@ -101,8 +101,8 @@
   * [教你十几分钟不用代码创建 Midjourney 提示词机器人](learn-more/use-cases/create-a-midjoureny-prompt-word-robot-with-zero-code.md)
   * [构建一个 Notion AI 助手](learn-more/use-cases/build-an-notion-ai-assistant.md)
   * [如何在几分钟内创建一个带有业务数据的官网 AI 智能客服](learn-more/use-cases/create-an-ai-chatbot-with-business-data-in-minutes.md)
-  * [使用全套开源工具构建 LLM 应用实战：在 Dify 调用 Baichuan 开源模型能力](learn-more/use-cases/practical-implementation-of-building-llm-applications-using-a-full-set-of-open-source-tools.md)
-  * [手摸手教你把 Dify 接入微信生态](learn-more/use-cases/dify-on-wechat.md)
+  * [使用全套开源工具构建 LLM 应用实战：在 MoLook 调用 Baichuan 开源模型能力](learn-more/use-cases/practical-implementation-of-building-llm-applications-using-a-full-set-of-open-source-tools.md)
+  * [手摸手教你把 MoLook 接入微信生态](learn-more/use-cases/dify-on-wechat.md)
 * [扩展阅读/指南](learn-more/extended-reading/README.md)
   * [什么是 LLMOps？](learn-more/extended-reading/what-is-llmops.md)
   * [检索增强生成（RAG）](learn-more/extended-reading/retrieval-augment/README.md)

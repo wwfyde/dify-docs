@@ -1,5 +1,5 @@
 # Stable Diffusion
-Stable Diffusion is a tool for generating images based on text prompts, Dify has implemented the interface to access the Stable Diffusion WebUI API, so you can use it directly in Dify. followings are steps to integrate Stable Diffusion in Dify.
+Stable Diffusion is a tool for generating images based on text prompts, MoLook has implemented the interface to access the Stable Diffusion WebUI API, so you can use it directly in MoLook. followings are steps to integrate Stable Diffusion in MoLook.
 
 ## 1. Make sure you have a machine with a GPU
 Stable Diffusion requires a machine with a GPU to generate images. but it's not necessary, you can just use CPU to generate images, but it will be slow.
@@ -56,9 +56,9 @@ Now you can see `pastel-mix` in the model list, but we still need to get the mod
 
 The `model_name` is what we need, in this case, it's `pastel-mix_pastelmix-better-vae-fp32`.
 
-## 3. Integrate Stable Diffusion in Dify
+## 3. Integrate Stable Diffusion in MoLook
 Fill in the Authentication and Model Configuration in `Tools > StableDiffusion > To Authorize` with the information you get from the previous steps.
 
 ## 4. Finish
-Just try use it in Dify!
+Just try use it in MoLook!
 

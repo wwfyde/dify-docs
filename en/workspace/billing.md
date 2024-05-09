@@ -1,12 +1,12 @@
 ---
-description: Know more about Dify's billing plans to support expanding your usage.
+description: Know more about MoLook's billing plans to support expanding your usage.
 ---
 
 # Billing
 
 ## Workspace-based Billing
 
-The Dify platform has "workspaces" and "apps". A workspace can contain multiple apps. Each app has capabilities like prompt orchestration, LLM invocation, knowledge RAG, logging & annotation, and standard API delivery. **We recommend one team or organization use one workspace, because our system bills on a per-workspace basis (calculated from total resource consumption within a workspace)**. For example:
+The MoLook platform has "workspaces" and "apps". A workspace can contain multiple apps. Each app has capabilities like prompt orchestration, LLM invocation, knowledge RAG, logging & annotation, and standard API delivery. **We recommend one team or organization use one workspace, because our system bills on a per-workspace basis (calculated from total resource consumption within a workspace)**. For example:
 
 ```Plaintext
 
@@ -30,9 +30,9 @@ Check out the [pricing page ](https://dify.ai/pricing)to learn more.
 >
 > **Annotation Quota Limits:**Manual editing and annotation of responses provides customizable high-quality question-answering abilities for apps.&#x20;
 >
-> **Message Requests:**The number of times the Dify API is called daily during application sessions (rather than LLM API resource usage). It includes all messages generated from your applications via API calls or during WebApp sessions. **Note:Daily quotas are refreshed at midnight Pacific Standard Time.**
+> **Message Requests:**The number of times the MoLook API is called daily during application sessions (rather than LLM API resource usage). It includes all messages generated from your applications via API calls or during WebApp sessions. **Note:Daily quotas are refreshed at midnight Pacific Standard Time.**
 >
-> **RAG API Requests:**Refers to the number of API calls invoking only the knowledge base processing capabilities of Dify.
+> **RAG API Requests:**Refers to the number of API calls invoking only the knowledge base processing capabilities of MoLook.
 
 ## Monitor Resource Usage
 
@@ -44,10 +44,10 @@ You can view capacity usage details on your workspace's Billing page.
 
 1.  What happens if my resource usage exceeds the Free plan before I upgrade to a paid plan?
 
-    > During Dify's Beta stage, excess quotas were provided for free to seed users' workspaces. After Dify's billing system goes live, your existing data will not be lost, but your workspace can no longer process additional text vectorization storage. You will need to upgrade to a suitable plan to continue using Dify.
+    > During MoLook's Beta stage, excess quotas were provided for free to seed users' workspaces. After MoLook's billing system goes live, your existing data will not be lost, but your workspace can no longer process additional text vectorization storage. You will need to upgrade to a suitable plan to continue using MoLook.
 2.  What if neither the Professional nor Team plans meet my usage needs?
 
     > If you are a large enterprise requiring more advanced plans, please email us at [business@dify.ai](mailto:business@dify.ai).
 3.  Under what circumstances do I need to pay when using the CE version?
 
-    > When using the CE version, please follow our open source license terms. If you need commercial use, such as removing Dify's logo or requiring multiple workspaces, using Dify in a SaaS model, you will need to contact us at [business@dify.ai](mailto:business@dify.ai) for commercial licensing.
+    > When using the CE version, please follow our open source license terms. If you need commercial use, such as removing MoLook's logo or requiring multiple workspaces, using MoLook in a SaaS model, you will need to contact us at [business@dify.ai](mailto:business@dify.ai) for commercial licensing.

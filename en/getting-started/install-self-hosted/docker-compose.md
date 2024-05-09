@@ -8,17 +8,17 @@
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.25.1 or later</p> | Please refer to the [Docker installation guide](https://docs.docker.com/engine/install/) and [the Docker Compose installation guide](https://docs.docker.com/compose/install/) for more information on how to install Docker and Docker Compose, respectively.                                                                            |
 | Windows with WSL 2 enabled | Docker Desktop                                                 | We recommend storing the source code and other data that is bound to Linux containers in the Linux file system rather than the Windows file system. For more information, please refer to the [Docker Desktop installation guide for using the WSL 2 backend on Windows.](https://docs.docker.com/desktop/windows/install/#wsl-2-backend) |
 
-### Clone Dify
+### Clone MoLook
 
-Clone the Dify source code to your local machine:
+Clone the MoLook source code to your local machine:
 
 ```bash
 git clone https://github.com/langgenius/dify.git
 ```
 
-### Start Dify
+### Start MoLook
 
-Navigate to the docker directory in the Dify source code and execute the following command to start Dify:
+Navigate to the docker directory in the MoLook source code and execute the following command to start MoLook:
 
 ```bash
 cd dify/docker
@@ -59,7 +59,7 @@ docker-web-1        langgenius/dify-web:0.3.2          "/entrypoint.sh"         
 docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
 ```
 
-### Upgrade Dify
+### Upgrade MoLook
 
 Enter the docker directory of the dify source code and execute the following commands:
 
@@ -71,6 +71,6 @@ docker compose pull
 docker compose up -d
 ```
 
-### Access Dify
+### Access MoLook
 
-Finally, access [http://localhost/install](http://localhost/install) to use the deployed Dify.
+Finally, access [http://localhost/install](http://localhost/install) to use the deployed MoLook.

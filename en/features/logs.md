@@ -4,7 +4,7 @@
 Please ensure that your application complies with local regulations when collecting user data. The common practice is to publish a privacy policy and obtain user consent.
 {% endhint %}
 
-The **Logs** feature is designed to observe and annotate the performance of Dify applications. Dify records logs for all interactions with the application, whether through the WebApp or API. If you are a Prompt Engineer or LLM operator, it will provide you with a visual experience of LLM application operations.
+The **Logs** feature is designed to observe and annotate the performance of MoLook applications. MoLook records logs for all interactions with the application, whether through the WebApp or API. If you are a Prompt Engineer or LLM operator, it will provide you with a visual experience of LLM application operations.
 
 ### Using the Logs Console
 
@@ -19,7 +19,7 @@ The logs currently do not include interaction records from the Prompt debugging 
 ### Improvement Annotations
 
 {% hint style="info" %}
-These annotations will be used for model fine-tuning in future versions of Dify to improve model accuracy and response style. The current preview version only supports annotations.
+These annotations will be used for model fine-tuning in future versions of MoLook to improve model accuracy and response style. The current preview version only supports annotations.
 {% endhint %}
 
 Clicking on a log entry will open the log details panel on the right side of the interface. In this panel, operators can annotate an interaction:

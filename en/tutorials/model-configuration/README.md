@@ -1,14 +1,14 @@
 ---
-description: Learn about the Different Models Supported by Dify.
+description: Learn about the Different Models Supported by MoLook.
 ---
 
 # Model Configuration
 
-Dify supports major model providers like OpenAI's GPT series and Anthropic's Claude series. Each model's capabilities and parameters differ, so select a model provider that suits your application's needs. **Obtain the API key from the model provider's official website before using it in Dify.**
+MoLook supports major model providers like OpenAI's GPT series and Anthropic's Claude series. Each model's capabilities and parameters differ, so select a model provider that suits your application's needs. **Obtain the API key from the model provider's official website before using it in MoLook.**
 
-## Model Types in Dify
+## Model Types in MoLook
 
-Dify classifies models into 4 types, each for different uses:
+MoLook classifies models into 4 types, each for different uses:
 
 1.  **System Inference Models:** Used in applications for tasks like chat, name generation, and suggesting follow-up questions.
 
@@ -23,23 +23,23 @@ Dify classifies models into 4 types, each for different uses:
 
     > Provider: OpenAI.
 
-Dify plans to add more LLM providers as technology and user needs evolve.
+MoLook plans to add more LLM providers as technology and user needs evolve.
 
 ## Hosted Model Trial Service
 
-Dify offers trial quotas for cloud service users to experiment with different models. Set up your model provider before the trial ends to ensure uninterrupted application use.
+MoLook offers trial quotas for cloud service users to experiment with different models. Set up your model provider before the trial ends to ensure uninterrupted application use.
 
 * OpenAI Hosted Model Trial: Includes 200 invocations for models like GPT3.5-turbo, GPT3.5-turbo-16k, text-davinci-003 models.
 
 ## Setting the Default Model
 
-Dify automatically selects the default model based on usage. Configure this in `Settings > Model Provider`.
+MoLook automatically selects the default model based on usage. Configure this in `Settings > Model Provider`.
 
 <figure><img src="../../.gitbook/assets/image-default-models.png" alt=""><figcaption></figcaption></figure>
 
 ## Model Integration Settings
 
-Choose your model in Dify's `Settings > Model Provider`.
+Choose your model in MoLook's `Settings > Model Provider`.
 
 <figure><img src="../../.gitbook/assets/image-20231210143654461.png" alt=""><figcaption></figcaption></figure>
 
@@ -50,10 +50,10 @@ Model providers fall into two categories:
 
 Integration methods differ between these categories.
 
-**Proprietary Model Providers:** Dify connects to all models from an integrated provider. Set the provider's API key in Dify to integrate.
+**Proprietary Model Providers:** MoLook connects to all models from an integrated provider. Set the provider's API key in MoLook to integrate.
 
 {% hint style="info" %}
-Dify uses [PKCS1\_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html) encryption to protect your API keys. Each user (tenant) has a unique key pair for encryption, ensuring your API keys remain confidential.
+MoLook uses [PKCS1\_OAEP](https://pycryptodome.readthedocs.io/en/latest/src/cipher/oaep.html) encryption to protect your API keys. Each user (tenant) has a unique key pair for encryption, ensuring your API keys remain confidential.
 {% endhint %}
 
 **Hosted Model Providers:** Integrate third-party models individually.

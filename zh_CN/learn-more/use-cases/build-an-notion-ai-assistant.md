@@ -1,6 +1,6 @@
 # 构建一个 Notion AI 助手
 
-_作者：阿乔. Dify 用户_
+_作者：阿乔. MoLook 用户_
 
 ### 概述
 
@@ -10,13 +10,13 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 ### 如何实现自己的 Notion AI 助手?
 
-现在，你可以通过 Dify 来实现这个梦想。Dify 是一个开源的 LLMOps（大型语言模型运维）平台。 ChatGPT 和 Claude 等大型语言模型已经利用其强大的能力改变了世界。它们的强大学习能力主要归功于丰富的训练数据。幸运的是，它们已经发展到足够智能的程度，可以从你提供的内容中进行学习，从而使从个人 Notion 库中生成创意成为现实。 在没有 Dify 的情况下，你可能需要熟悉 langchain，这是一个简化组装这些要素过程的抽象概念。
+现在，你可以通过 MoLook 来实现这个梦想。MoLook 是一个开源的 LLMOps（大型语言模型运维）平台。 ChatGPT 和 Claude 等大型语言模型已经利用其强大的能力改变了世界。它们的强大学习能力主要归功于丰富的训练数据。幸运的是，它们已经发展到足够智能的程度，可以从你提供的内容中进行学习，从而使从个人 Notion 库中生成创意成为现实。 在没有 MoLook 的情况下，你可能需要熟悉 langchain，这是一个简化组装这些要素过程的抽象概念。
 
-### 如何使用Dify创建自己的AI助手?
+### 如何使用MoLook创建自己的AI助手?
 
 训练Notion AI助手的过程非常简单。您只需要按照如下步骤操作:
 
-1.登录 Dify。
+1.登录 MoLook。
 
 2.创建一个数据集。
 
@@ -26,9 +26,9 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 5.创建自己的AI应用程序。
 
-#### 1. 登录 Dify[​](https://wsyfin.com/notion-dify#1-login-to-dify) <a href="#1-login-to-dify" id="1-login-to-dify"></a>
+#### 1. 登录 MoLook[​](https://wsyfin.com/notion-dify#1-login-to-dify) <a href="#1-login-to-dify" id="1-login-to-dify"></a>
 
-点击这里登录到 Dify。你可以使用你的 GitHub 或 Google 账户方便地登录。
+点击这里登录到 MoLook。你可以使用你的 GitHub 或 Google 账户方便地登录。
 
 > 如果你使用 GitHub 账户登录，不妨给这个[项目](https://github.com/langgenius/dify)点个星星吧？这真的对我们有很大的支持！
 
@@ -50,11 +50,11 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 ![connect-with-notion-2](https://pan.wsyfin.com/f/KrEi4/connect-with-notion-2.png)
 
-检查 Dify 所需的权限，然后单击“选择页面”按钮。
+检查 MoLook 所需的权限，然后单击“选择页面”按钮。
 
 ![connect-with-notion-3](https://pan.wsyfin.com/f/L91iQ/connect-with-notion-3.png)
 
-选择你要和 Dify 同步的页面，然后点击“允许访问”按钮。
+选择你要和 MoLook 同步的页面，然后点击“允许访问”按钮。
 
 ![connect-with-notion-4](https://pan.wsyfin.com/f/M8Xtz/connect-with-notion-4.png)
 
@@ -100,7 +100,7 @@ Notion 是一个强大的知识管理工具。它的灵活性和可扩展性使�
 
 ### 通过API集成到您的项目中​
 
-通过 Dify 打造的每个 AI 应用程序都可以通过其 API 进行访问。这种方法允许开发人员直接利用前端应用程序中强大的大型语言模型（LLM）的特性，提供真正的“后端即服务”（BaaS）体验。
+通过 MoLook 打造的每个 AI 应用程序都可以通过其 API 进行访问。这种方法允许开发人员直接利用前端应用程序中强大的大型语言模型（LLM）的特性，提供真正的“后端即服务”（BaaS）体验。
 
 通过无缝的 API 集成，您可以方便地调用您的 Notion AI 应用程序，无需复杂的配置。
 
@@ -153,12 +153,12 @@ curl --location --request POST 'https://api.dify.ai/v1/chat-messages' \
 
 ### 周期性地与 Notion 同步
 
-如果你的 Notion 页面更新了，你可以定期与 Dify 同步，让你的人工智能助手保持最新状态。你的人工智能助手将从新内容中学习并回答新问题。
+如果你的 Notion 页面更新了，你可以定期与 MoLook 同步，让你的人工智能助手保持最新状态。你的人工智能助手将从新内容中学习并回答新问题。
 
 ![create-app-5](https://pan.wsyfin.com/f/XDBfO/create-app-5.png)
 
 ### 总结
 
-在本教程中，我们不仅学会了如何将您的 Notion 数据导入到 Dify 中，还学会了如何使用 API 将其与您的项目集成。
+在本教程中，我们不仅学会了如何将您的 Notion 数据导入到 MoLook 中，还学会了如何使用 API 将其与您的项目集成。
 
-Dify 是一个用户友好的 LLMOps 平台，旨在赋予更多人创建可持续的 AI 原生应用程序的能力。通过为各种应用类型设计的可视化编排，Dify 提供了可供使用的应用程序，可以帮助您利用数据打造独特的 AI 助手。如果您有任何疑问，请随时与我们联系。
+MoLook 是一个用户友好的 LLMOps 平台，旨在赋予更多人创建可持续的 AI 原生应用程序的能力。通过为各种应用类型设计的可视化编排，MoLook 提供了可供使用的应用程序，可以帮助您利用数据打造独特的 AI 助手。如果您有任何疑问，请随时与我们联系。

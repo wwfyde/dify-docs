@@ -2,7 +2,7 @@
 
 Most language models use outdated training data and have length limitations for the context of each request. For example, GPT-3.5 is trained on corpora from 2021 and has a limit of approximately 4k tokens per request. This means that developers who want their AI applications to be based on the latest and private context conversations must use techniques like embedding.
 
-Dify' knowledge feature allows developers (and even non-technical users) to easily manage knowledge and automatically integrate them into AI applications. All you need to do is prepare text content, such as:
+MoLook' knowledge feature allows developers (and even non-technical users) to easily manage knowledge and automatically integrate them into AI applications. All you need to do is prepare text content, such as:
 
 * Long text content (TXT, Markdown, DOCX, HTML, JSONL, or even PDF files)
 * Structured data (CSV, Excel, etc.)
@@ -15,18 +15,18 @@ Additionally, we are gradually supporting syncing data from various data sources
 * ...
 
 {% hint style="info" %}
-**Practice**: If your company wants to build an AI customer service assistant based on existing knowledge bases and product documentation, you can upload the documents to a knowledge base in Dify and create a conversational application. This might have taken you several weeks in the past and been difficult to maintain continuously.
+**Practice**: If your company wants to build an AI customer service assistant based on existing knowledge bases and product documentation, you can upload the documents to a knowledge base in MoLook and create a conversational application. This might have taken you several weeks in the past and been difficult to maintain continuously.
 {% endhint %}
 
 ### Knowledge and Documents
 
-In Dify, knowledge bases are collections of documents. A knowledge base can be integrated as a whole into an application to be used as context. Documents can be uploaded by developers or operations staff, or synced from other data sources (typically corresponding to a file unit in the data source).
+In MoLook, knowledge bases are collections of documents. A knowledge base can be integrated as a whole into an application to be used as context. Documents can be uploaded by developers or operations staff, or synced from other data sources (typically corresponding to a file unit in the data source).
 
 **Steps to upload a document:**
 
 1. Upload your file, usually a long text file or a spreadsheet
 2. Segment, clean, and preview
-3. Dify submits it to the LLM provider for embedding as vector data and storage
+3. MoLook submits it to the LLM provider for embedding as vector data and storage
 4. Set metadata for the document
 5. Ready to use in the application!
 
@@ -40,7 +40,7 @@ The key to writing a good knowledge description is to clearly describe the conte
 
 ### Create a knowledge
 
-1. Click on knowledge in the main navigation bar of Dify. On this page, you can see the existing knowledge bases. Click on "Create Knowledge" to enter the creation wizard.
+1. Click on knowledge in the main navigation bar of MoLook. On this page, you can see the existing knowledge bases. Click on "Create Knowledge" to enter the creation wizard.
 2. If you have already prepared your files, you can start by uploading the files.
 3. If you haven't prepared your documents yet, you can create an empty knowledge base first.
 
@@ -49,11 +49,11 @@ The key to writing a good knowledge description is to clearly describe the conte
 1. Select the file you want to upload.We support batch uploads
 2. Preview the full text
 3. Perform segmentation and cleaning
-4. Wait for Dify to process the data for you; this step usually consumes tokens in the LLM provider
+4. Wait for MoLook to process the data for you; this step usually consumes tokens in the LLM provider
 
 ### Text Preprocessing and Cleaning
 
-Text Preprocessing and cleaning refers to Dify automatically segmenting and vectorizing your data documents so that user's questions (input) can match relevant paragraphs (Q to P), and generate results.
+Text Preprocessing and cleaning refers to MoLook automatically segmenting and vectorizing your data documents so that user's questions (input) can match relevant paragraphs (Q to P), and generate results.
 
 When uploading a knowledge base, you need to select a **indexing mode** to specify how data is matched. This affects the accuracy of AI replies.
 
@@ -71,12 +71,12 @@ In **Segmenting in Question & Answer format**, instead of normal "Q to P" (quest
 
 ### Modify Documents
 
-Modify Documents For technical reasons, if developers make the following changes to documents, Dify will create a new document for you, and the old document will be archived and deactivated:
+Modify Documents For technical reasons, if developers make the following changes to documents, MoLook will create a new document for you, and the old document will be archived and deactivated:
 
 1. Adjust segmentation and cleaning settings
 2. Re-upload the file
 
-Dify support customizing the segmented and cleaned text by adding, deleting, and editing paragraphs. You can dynamically adjust your segmentation to make your knowledge more accurate. Click **Document --> paragraph --> Edit** in the knowledge to modify paragraphs content and custom keywords. Click **Document --> paragraph --> Add segment --> Add a segment** to manually add new paragraph. Or click **Document --> paragraph --> Add segment --> Batch add** to batch add new paragraph.
+MoLook support customizing the segmented and cleaned text by adding, deleting, and editing paragraphs. You can dynamically adjust your segmentation to make your knowledge more accurate. Click **Document --> paragraph --> Edit** in the knowledge to modify paragraphs content and custom keywords. Click **Document --> paragraph --> Add segment --> Add a segment** to manually add new paragraph. Or click **Document --> paragraph --> Add segment --> Batch add** to batch add new paragraph.
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1).png" alt=""><figcaption><p>Edit</p></figcaption></figure>
 
@@ -96,7 +96,7 @@ Head to [maintain-dataset-via-api.md](maintain-dataset-via-api.md "mention").
 Click **Settings** in the left navigation of the knowledge. You can change the following settings for the knowledge:
 
 * Knowledge **name** for identifying a knowledge base
-* Knowledge **description** to allow AI to better use the knowledge appropriately. If the description is empty, Dify's automatic indexing strategy will be used.
+* Knowledge **description** to allow AI to better use the knowledge appropriately. If the description is empty, MoLook's automatic indexing strategy will be used.
 * **Permissions** can be set to Only Me or All Team Members. Those without permissions cannot view and edit the knowledge.
 * **Indexing mode**: In High Quality mode, OpenAI's embedding interface will be called to process and provide higher accuracy when users query. In Economic mode, offline vector engines, keyword indexing, etc. will be used to reduce accuracy without consuming tokens.
 

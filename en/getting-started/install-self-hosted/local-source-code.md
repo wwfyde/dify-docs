@@ -10,7 +10,7 @@
 
 > If you need to use OpenAI TTS, `FFmpeg` must be installed on the system for it to function properly. For more details, refer to: [Link](https://docs.dify.ai/getting-started/install-self-hosted/install-faq#id-14.-what-to-do-if-this-error-occurs-in-text-to-speech).
 
-### Clone Dify
+### Clone MoLook
 
 ```Bash
 git clone https://github.com/langgenius/dify.git
@@ -220,6 +220,6 @@ warn  - Experimental features are not covered by semver, and may cause unexpecte
 info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
 ```
 
-### Access Dify
+### Access MoLook
 
-Finally, access [http://127.0.0.1:3000](http://127.0.0.1:3000/) to use the locally deployed Dify.
+Finally, access [http://127.0.0.1:3000](http://127.0.0.1:3000/) to use the locally deployed MoLook.

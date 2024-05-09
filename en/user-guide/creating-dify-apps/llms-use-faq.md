@@ -72,7 +72,7 @@ Query or prefix prompt is too long, you can reduce the preix prompt, or shrink t
 
 You can lower the value of "Max token" in the parameter settings of the Prompt Eng.
 
-### 10. What are the default models in Dify, and can open-source LLMs be used?
+### 10. What are the default models in MoLook, and can open-source LLMs be used?
 
 A: The default models can be configured under **Settings - Model Provider.** Currently supported text generation LLMs include OpenAI, Azure OpenAl, Anthropic, etc. At the same time, open-source LLMs hosted on Hugging Face, Replicate, xinference, etc. can also be integrated.
 
@@ -103,13 +103,13 @@ Whether to use a knowledge base is related to the description of the knowledge. 
 
 Set the header in the first row, and display the content in each subsequent row. Do not have any additional header settings or complex formatted table content.
 
-### 17. I have already purchased ChatGPT plus, why can't I still use GPT4 in Dify?
+### 17. I have already purchased ChatGPT plus, why can't I still use GPT4 in MoLook?
 
 ChatGPT Plus and OpenAI's GPT-4 model API are two separate products with separate pricing. The model APIs have their own pricing structure, see [OpenAI's pricing documentation](https://openai.com/pricing) for details. To get access to the GPT-4 model API, you need to pay for a billing cycle - simply having a payment method on file and access to GPT-3.5 via ChatGPT Plus is not sufficient. Please refer to [OpenAI's official documentation](https://platform.openai.com/account/billing/overview) for complete details on gaining access to GPT-4.
 
 ### 18. How to add other embedding models?
 
-Dify supports using the listed providers as an Embedding model provider, simply select the `Embedding` type in the configuration box.
+MoLook supports using the listed providers as an Embedding model provider, simply select the `Embedding` type in the configuration box.
 
 * Azure
 * LocalAI
@@ -120,4 +120,4 @@ Dify supports using the listed providers as an Embedding model provider, simply 
 
 ### 19. How can I set my own created app as an app template?
 
-The ability to set your own created app as a template is currently not supported. The existing templates are provided by Dify officially for cloud version users' reference. If you are using the cloud version, you can add apps to your workspace or customize them to make your own after modifications. If you are using the community version and need to create more app templates for your team, you may consult our business team to obtain paid technical support: [business@dify.ai](mailto:business@dify.ai)
+The ability to set your own created app as a template is currently not supported. The existing templates are provided by MoLook officially for cloud version users' reference. If you are using the cloud version, you can add apps to your workspace or customize them to make your own after modifications. If you are using the community version and need to create more app templates for your team, you may consult our business team to obtain paid technical support: [business@dify.ai](mailto:business@dify.ai)

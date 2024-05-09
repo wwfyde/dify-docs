@@ -2,7 +2,7 @@
 
 ### Introduce
 
-Workflow reduces system complexity by breaking complex tasks into smaller steps (nodes), reducing dependence on prompt word technology and model inference capabilities, enhancing the performance of LLM applications for complex tasks, and improving system explainability, stability, and fault tolerance. Dify workflows are divided into two types based on application scenarios:
+Workflow reduces system complexity by breaking complex tasks into smaller steps (nodes), reducing dependence on prompt word technology and model inference capabilities, enhancing the performance of LLM applications for complex tasks, and improving system explainability, stability, and fault tolerance. MoLook workflows are divided into two types based on application scenarios:
 
 * **Chatflow**: For conversational scenarios, including customer service, semantic search, and other conversational applications that require multi-step logic in building responses.
 * **Workflow**: For automation and batch processing scenarios, suitable for high-quality translation, data analysis, content creation, email automation, etc.

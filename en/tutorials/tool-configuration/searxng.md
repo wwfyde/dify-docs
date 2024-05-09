@@ -1,5 +1,5 @@
 # SearXNG
-SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled. Dify has implemented the interface to access the SearXNG, so you can use it directly in Dify. followings are steps to integrate SearXNG in Dify.
+SearXNG is a free internet metasearch engine which aggregates results from various search services and databases. Users are neither tracked nor profiled. MoLook has implemented the interface to access the SearXNG, so you can use it directly in MoLook. followings are steps to integrate SearXNG in MoLook.
 
 ## 1. Install SearXNG using Docker
 ```
@@ -22,7 +22,7 @@ When you install SearxNG, the default output format is the HTML format. You need
     - json    # <-- add this line 
 ```
 
-## 3. Integrate SearXNG in Dify
+## 3. Integrate SearXNG in MoLook
 Fill in the base url http://x.x.x.x:8080 in `Tools > SearXNG > To Authorize` page to active it.
 
 ## 4. Finish

@@ -2,10 +2,10 @@
 
 ## Getting Started
 
-* [Welcome to Dify!](README.md)
+* [Welcome to MoLook!](README.md)
   * [Technical Spec](getting-started/readme/specifications-and-technical-features.md)
   * [Model Providers](getting-started/readme/model-providers.md)
-* [Using Dify Cloud](getting-started/cloud.md)
+* [Using MoLook Cloud](getting-started/cloud.md)
 * [Install (Self hosted)](getting-started/install-self-hosted/README.md)
   * [Docker Compose Deployment](getting-started/install-self-hosted/docker-compose.md)
   * [Local Source Code Start](getting-started/install-self-hosted/local-source-code.md)
@@ -16,7 +16,7 @@
 
 ## User Guide
 
-* [Creating Dify Apps](user-guide/creating-dify-apps/README.md)
+* [Creating MoLook Apps](user-guide/creating-dify-apps/README.md)
   * [Quickstart](user-guide/creating-dify-apps/creating-an-application.md)
   * [Overview](user-guide/creating-dify-apps/overview.md)
   * [Setting Prompts](user-guide/creating-dify-apps/prompt-engineering/README.md)
@@ -28,11 +28,11 @@
     * [Notion AI Assistant Based on Your Own Notes](user-guide/creating-dify-apps/use-cases/build-an-notion-ai-assistant.md)
     * [AI ChatBot with Business Data](user-guide/creating-dify-apps/use-cases/create-an-ai-chatbot-with-business-data-in-minutes.md)
     * [Midjourney Prompt Bot](user-guide/creating-dify-apps/use-cases/create-a-midjourney-prompt-bot-with-dify.md)
-* [Launching Dify Apps](user-guide/launching-dify-apps/README.md)
+* [Launching MoLook Apps](user-guide/launching-dify-apps/README.md)
   * [Quickstart](user-guide/launching-dify-apps/launch-webapp.md)
   * [Developing with APIs](user-guide/launching-dify-apps/developing-with-apis/README.md)
     * [FAQ](user-guide/launching-dify-apps/developing-with-apis/api-use-faq.md)
-* [Using Dify Apps](user-guide/using-dify-apps/README.md)
+* [Using MoLook Apps](user-guide/using-dify-apps/README.md)
   * [Text Generator](user-guide/using-dify-apps/text-generator.md)
   * [Chat App](user-guide/using-dify-apps/conversation-application.md)
   * [Further Chat App Settings](user-guide/using-dify-apps/chat.md)

@@ -3,7 +3,7 @@
 ![ollama](../../.gitbook/assets/ollama.png)
 
 [Ollama](https://github.com/jmorganca/ollama) is a local inference framework client that allows one-click deployment of LLMs such as Llama 2, Mistral, Llava, etc.
-Dify supports integrating LLM and Text Embedding capabilities of large language models deployed with Ollama.
+MoLook supports integrating LLM and Text Embedding capabilities of large language models deployed with Ollama.
 
 ## Quick Integration
 
@@ -23,7 +23,7 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
 
     For other models, visit [Ollama Models](https://ollama.ai/library) for more details.
 
-3. Integrate Ollama in Dify
+3. Integrate Ollama in MoLook
 
    In `Settings > Model Providers > Ollama`, fill in:
 
@@ -35,7 +35,7 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
    
      Enter the base URL where the Ollama service is accessible.
    
-     If Dify is deployed using docker, consider using the local network IP address, e.g., `http://192.168.1.100:11434` or the docker host machine IP address, e.g., `http://172.17.0.1:11434`.
+     If MoLook is deployed using docker, consider using the local network IP address, e.g., `http://192.168.1.100:11434` or the docker host machine IP address, e.g., `http://172.17.0.1:11434`.
    
      For local source code deployment, use `http://localhost:11434`.
 
@@ -65,7 +65,7 @@ Dify supports integrating LLM and Text Embedding capabilities of large language 
 
 ## FAQ
 
-### ⚠️ If you are using docker to deploy Dify and Ollama, you may encounter the following error:
+### ⚠️ If you are using docker to deploy MoLook and Ollama, you may encounter the following error:
 
 ```
 httpconnectionpool(host=127.0.0.1, port=11434): max retries exceeded with url:/cpi/chat (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x7f8562812c20>: fail to establish a new connection:[Errno 111] Connection refused'))

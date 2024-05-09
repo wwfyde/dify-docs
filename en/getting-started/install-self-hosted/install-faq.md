@@ -83,9 +83,9 @@ Find the configuration domain name APP\_WEB\_URL in `docker_compose.yaml`.
 
 The database, configured storage, and vector database data need to be backed up. If deployed in Docker Compose mode, all data content in the `dify/docker/volumes` directory can be directly backed up.
 
-### 10. Why is Docker deploying Dify and starting OpenLLM locally using 127.0.0.1, but unable to access the local port?
+### 10. Why is Docker deploying MoLook and starting OpenLLM locally using 127.0.0.1, but unable to access the local port?
 
-`127.0.0.1` is the internal address of the container, and the server address configured by Dify requires the host LAN IP address.
+`127.0.0.1` is the internal address of the container, and the server address configured by MoLook requires the host LAN IP address.
 
 ### 11. How to solve the size and quantity limitations for uploading knowledge documents in the local deployment version？
 

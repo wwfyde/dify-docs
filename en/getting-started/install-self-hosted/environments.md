@@ -265,7 +265,7 @@ Used to store uploaded data set files, team/tenant encryption keys, and other fi
 
     *   dify
 
-        Dify's proprietary file extraction scheme
+        MoLook's proprietary file extraction scheme
     *   Unstructured
 
         Unstructured.io file extraction scheme

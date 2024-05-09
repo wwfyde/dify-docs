@@ -6,7 +6,7 @@ An Agent Assistant can leverage the reasoning abilities of large language models
 
 ## Usage Instructions
 
-To facilitate quick learning and use, application templates for the Agent Assistant are available in the 'Explore' section. You can integrate these templates into your workspace. The new Dify 'Studio' also allows the creation of a custom Agent Assistant to suit individual requirements. This assistant can assist in analyzing financial reports, composing reports, designing logos, and organizing travel plans.
+To facilitate quick learning and use, application templates for the Agent Assistant are available in the 'Explore' section. You can integrate these templates into your workspace. The new MoLook 'Studio' also allows the creation of a custom Agent Assistant to suit individual requirements. This assistant can assist in analyzing financial reports, composing reports, designing logos, and organizing travel plans.
 
 <figure><img src="../../../.gitbook/assets/docs-1.png" alt=""><figcaption><p>Explore-Agent Assistant Application Template</p></figcaption></figure>
 
@@ -26,17 +26,17 @@ You can write prompts for the Agent Assistant in 'Instructions'. To achieve opti
 
 In the "Context" section, you can incorporate knowledge base tools that the Agent Assistant can utilize for information retrieval. This will assist in providing it with external background knowledge.
 
-In the "Tools" section, you are able to add tools that are required for use. These tools can enhance the capabilities of LLMs, such as internet searches, scientific computations, or image creation, thereby enriching the LLM's ability to interact with the real world. Dify offers two types of tools: **built-in tools and custom tools.**
+In the "Tools" section, you are able to add tools that are required for use. These tools can enhance the capabilities of LLMs, such as internet searches, scientific computations, or image creation, thereby enriching the LLM's ability to interact with the real world. MoLook offers two types of tools: **built-in tools and custom tools.**
 
-You have the option to directly use built-in tools in Dify, or you can easily import custom API tools (currently supporting OpenAPI/Swagger and OpenAI Plugin standards).
+You have the option to directly use built-in tools in MoLook, or you can easily import custom API tools (currently supporting OpenAPI/Swagger and OpenAI Plugin standards).
 
 <figure><img src="../../../.gitbook/assets/docs-5.png" alt=""><figcaption><p>Adding Tools for the Assistant</p></figcaption></figure>
 
-The tool allows you to create more powerful AI applications on Dify. For example, you can orchestrate suitable tools for Agent Assistant, enabling it to complete complex tasks through reasoning, step decomposition, and tool invocation. Additionally, the tool facilitates the integration of your application with other systems or services, allowing interaction with the external environment, such as code execution and access to exclusive information sources.
+The tool allows you to create more powerful AI applications on MoLook. For example, you can orchestrate suitable tools for Agent Assistant, enabling it to complete complex tasks through reasoning, step decomposition, and tool invocation. Additionally, the tool facilitates the integration of your application with other systems or services, allowing interaction with the external environment, such as code execution and access to exclusive information sources.
 
 ## Agent Settings
 
-On Dify, two inference modes are provided for Agent Assistant: Function Calling and ReAct. Models like GPT-3.5 and GPT-4 that support Function Calling have demonstrated better and more stable performance. For model series that do not support Function Calling, we have implemented the ReAct inference framework to achieve similar effects.&#x20;
+On MoLook, two inference modes are provided for Agent Assistant: Function Calling and ReAct. Models like GPT-3.5 and GPT-4 that support Function Calling have demonstrated better and more stable performance. For model series that do not support Function Calling, we have implemented the ReAct inference framework to achieve similar effects.&#x20;
 
 In the Agent settings, you can modify the iteration limit of the Agent.
 

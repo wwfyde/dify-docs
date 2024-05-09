@@ -8,15 +8,15 @@
 | Linux platforms            | <p>Docker 19.03 or later<br>Docker Compose 1.25.1 or later</p> | 请参阅[安装 Docker](https://docs.docker.com/engine/install/) 和[安装 Docker Compose](https://docs.docker.com/compose/install/) 以获取更多信息。                                                      |
 | Windows with WSL 2 enabled | <p>Docker Desktop<br></p>                                      | 我们建议将源代码和其他数据绑定到 Linux 容器中时，将其存储在 Linux 文件系统中，而不是 Windows 文件系统中。有关更多信息，请参阅[使用 WSL 2 后端在 Windows 上安装 Docker Desktop](https://docs.docker.com/desktop/windows/install/#wsl-2-backend)。 |
 
-### Clone Dify
+### Clone MoLook
 
-Clone Dify 源代码至本地
+Clone MoLook 源代码至本地
 
 ```bash
 git clone https://github.com/langgenius/dify.git
 ```
 
-### Start Dify
+### Start MoLook
 
 进入 dify 源代码的 docker 目录，执行一键启动命令：
 
@@ -59,7 +59,7 @@ docker-web-1        langgenius/dify-web:0.3.2          "/entrypoint.sh"         
 docker-worker-1     langgenius/dify-api:0.3.2          "/entrypoint.sh"         worker              4 seconds ago       Up 2 seconds        80/tcp, 5001/tcp
 ```
 
-### Upgrade Dify
+### Upgrade MoLook
 
 进入 dify 源代码的 docker 目录，按顺序执行以下命令：
 
@@ -70,6 +70,6 @@ docker compose down
 docker compose pull
 docker compose up -d
 ```
-### Access Dify
+### Access MoLook
 
-访问 Difyll在浏览器中输入 `http://localhost` 访问 Dify。
+访问 MoLookll在浏览器中输入 `http://localhost` 访问 MoLook。

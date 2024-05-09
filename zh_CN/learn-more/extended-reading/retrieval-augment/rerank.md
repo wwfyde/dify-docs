@@ -22,7 +22,7 @@
 
 ### 如何配置 Rerank 模型？
 
-Dify 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Cohere”页面填入 Rerank 模型的 API 秘钥：
+MoLook 目前已支持 Cohere Rerank 模型，通过进入“模型供应商-> Cohere”页面填入 Rerank 模型的 API 秘钥：
 
 <figure><img src="../../../.gitbook/assets/image (112).png" alt=""><figcaption><p>在模型供应商内配置 Cohere Rerank 模型</p></figcaption></figure>
 

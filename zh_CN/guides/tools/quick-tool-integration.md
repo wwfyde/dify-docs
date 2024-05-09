@@ -16,7 +16,7 @@
 
 ```yaml
 identity: # 工具供应商的基本信息
-  author: Dify # 作者
+  author: MoLook # 作者
   name: google # 名称，唯一，不允许和其他供应商重名
   label: # 标签，用于前端展示
     en_US: Google # 英文标签
@@ -46,7 +46,7 @@ Google 作为一个第三方工具，使用了 SerpApi 提供的 API，而 SerpA
 
 ```yaml
 identity:
-  author: Dify
+  author: MoLook
   name: wikipedia
   label:
     en_US: Wikipedia
@@ -64,7 +64,7 @@ credentials_for_provider:
 
 ```yaml
 identity:
-  author: Dify
+  author: MoLook
   name: google
   label:
     en_US: Google
@@ -101,7 +101,7 @@ credentials_for_provider: # 凭据字段
 ```yaml
 identity: # 工具的基本信息
   name: google_search # 工具名称，唯一，不允许和其他工具重名
-  author: Dify # 作者
+  author: MoLook # 作者
   label: # 标签，用于前端展示
     en_US: GoogleSearch # 英文标签
     zh_Hans: 谷歌搜索 # 中文标签
@@ -153,7 +153,7 @@ parameters: # 参数列表
     * 在`llm`模式下，如果参数为必填，则会要求 Agent 必须要推理出这个参数
     * 在`form`模式下，如果参数为必填，则会要求用户在对话开始前在前端填写这个参数
   * `options` 参数选项
-    * 在`llm`模式下，Dify 会将所有选项传递给 LLM，LLM 可以根据这些选项进行推理
+    * 在`llm`模式下，MoLook 会将所有选项传递给 LLM，LLM 可以根据这些选项进行推理
     * 在`form`模式下，`type`为`select`时，前端会展示这些选项
   * `default` 默认值
   * `label` 参数标签，用于前端展示

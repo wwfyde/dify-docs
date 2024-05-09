@@ -2,7 +2,7 @@
 
 ## 开始
 
-因为 Dify API Extension 需要使用可以访问的公网地址作为 API Endpoint，所以我们需要将 API 扩展部署到一个公网地址上。这里我们使用 Cloudflare Workers 来部署我们的 API 扩展。
+因为 MoLook API Extension 需要使用可以访问的公网地址作为 API Endpoint，所以我们需要将 API 扩展部署到一个公网地址上。这里我们使用 Cloudflare Workers 来部署我们的 API 扩展。
 
 我们 Clone [Example GitHub Repository](https://github.com/crazywoola/dify-extension-workers)，这个仓库包含了一个简单的 API 扩展，我们可以在这个基础上进行修改。
 
@@ -13,7 +13,7 @@ cp wrangler.toml.example wrangler.toml
 
 打开 `wrangler.toml` 文件，修改 `name` 和 `compatibility_date` 为你的应用名称和兼容日期。
 
-这里我们我们需要注意的配置就是 `vars` 里面的 `TOKEN`，在 Dify 添加 API 扩展的时候，我们需要填写这个 Token。出于安全考虑，我们建议你使用一个随机的字符串作为 Token，你不应该在源代码中直接写入 Token，而是使用环境变量的方式来传递 Token。所以请不要把 wrangler.toml 提交到你的代码仓库中。
+这里我们我们需要注意的配置就是 `vars` 里面的 `TOKEN`，在 MoLook 添加 API 扩展的时候，我们需要填写这个 Token。出于安全考虑，我们建议你使用一个随机的字符串作为 Token，你不应该在源代码中直接写入 Token，而是使用环境变量的方式来传递 Token。所以请不要把 wrangler.toml 提交到你的代码仓库中。
 
 ```toml
 name = "dify-extension-example"
@@ -40,12 +40,12 @@ const result = await fetch(url).then(res => res.text())
 ```bash
 npm run deploy
 ```
-部署成功之后，你会得到一个公网地址，你可以在 Dify 中添加这个地址作为 API Endpoint。请注意不要遗漏 `endpoint` 这个路径。
+部署成功之后，你会得到一个公网地址，你可以在 MoLook 中添加这个地址作为 API Endpoint。请注意不要遗漏 `endpoint` 这个路径。
 
 
 <figure><img src="../../../../.gitbook/assets/api_extension_edit.png" alt="">
 <figcaption><p>
-在 Dify 中添加 API Endpoint
+在 MoLook 中添加 API Endpoint
 </p></figcaption>
 </figure>
 

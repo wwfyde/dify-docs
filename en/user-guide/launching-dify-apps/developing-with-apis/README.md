@@ -1,8 +1,8 @@
 # Developing with APIs
 
-Dify offers a "Backend-as-a-Service" API, providing numerous benefits to AI application developers. This approach enables developers to access the powerful capabilities of large language models (LLMs) directly in frontend applications without the complexities of backend architecture and deployment processes.
+MoLook offers a "Backend-as-a-Service" API, providing numerous benefits to AI application developers. This approach enables developers to access the powerful capabilities of large language models (LLMs) directly in frontend applications without the complexities of backend architecture and deployment processes.
 
-### Benefits of using Dify API
+### Benefits of using MoLook API
 
 * Allow frontend apps to securely access LLM capabilities without backend development
 * Design applications visually with real-time updates across all clients
@@ -13,7 +13,7 @@ Dify offers a "Backend-as-a-Service" API, providing numerous benefits to AI appl
 
 ### How to use
 
-Choose an application, and find the API Access in the left-side navigation of the Apps section. On this page, you can view the API documentation provided by Dify and manage credentials for accessing the API.
+Choose an application, and find the API Access in the left-side navigation of the Apps section. On this page, you can view the API documentation provided by MoLook and manage credentials for accessing the API.
 
 <figure><img src="../../../.gitbook/assets/API Access.png" alt=""><figcaption><p>API document</p></figcaption></figure>
 
@@ -27,7 +27,7 @@ For example, if you're a developer in a consulting company, you can offer AI cap
 
 ### Text-generation application
 
-These applications are used to generate high-quality text, such as articles, summaries, translations, etc., by calling the completion-messages API and sending user input to obtain generated text results. The model parameters and prompt templates used for generating text depend on the developer's settings in the Dify Prompt Arrangement page.
+These applications are used to generate high-quality text, such as articles, summaries, translations, etc., by calling the completion-messages API and sending user input to obtain generated text results. The model parameters and prompt templates used for generating text depend on the developer's settings in the MoLook Prompt Arrangement page.
 
 You can find the API documentation and example requests for this application in **Applications -> Access API**.
 

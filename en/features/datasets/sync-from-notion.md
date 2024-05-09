@@ -1,6 +1,6 @@
 # Sync from Notion
 
-Dify knowledge supports importing from Notion and setting up **Sync** so that data is automatically synced to Dify after updates in Notion.
+MoLook knowledge supports importing from Notion and setting up **Sync** so that data is automatically synced to MoLook after updates in Notion.
 
 ### Authorization verification
 
@@ -15,19 +15,19 @@ After completing authorization verification, go to the knowledge creation page, 
 
 ### Segmentation and cleaning
 
-Next, select your **segmentation settings** and **indexing method**, **save and process**. Wait for Dify to process this data, usually this step requires token consumption in LLM providers. Dify not only supports importing ordinary page types but also summarizes and saves the page attributes under the database type.
+Next, select your **segmentation settings** and **indexing method**, **save and process**. Wait for MoLook to process this data, usually this step requires token consumption in LLM providers. MoLook not only supports importing ordinary page types but also summarizes and saves the page attributes under the database type.
 
 _**Note: Images and files are not currently supported for import. Table data will be converted to text.**_
 
 ### Sync Notion data
 
-If your Notion content has been modified, you can click Sync directly on the Dify knowledge document list page to sync the data with one click(Please note that each time you click, the current content will be synchronized). This step requires token consumption.
+If your Notion content has been modified, you can click Sync directly on the MoLook knowledge document list page to sync the data with one click(Please note that each time you click, the current content will be synchronized). This step requires token consumption.
 
 <figure><img src="../../.gitbook/assets/sync-notion-data.png" alt=""><figcaption><p>Sync Notion data</p></figcaption></figure>
 
 ### (Community Edition) Notion Integration Configuration Guide
 
-Notion integration is divided into two ways: **internal integration** and **public integration** . It can be configured in Dify on demand.
+Notion integration is divided into two ways: **internal integration** and **public integration** . It can be configured in MoLook on demand.
 
 For the specific differences between the two integration methods, please refer to the [official doc of Notion](https://developers.notion.com/docs/authorization).
 
@@ -45,7 +45,7 @@ Once the integration is created, you can update its settings as needed under the
 
 <figure><img src="../../.gitbook/assets/image (1) (1) (1) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Copy it and back to the Dify source code , in the **.env** file configuration related environment variables, environment variables as follows:
+Copy it and back to the MoLook source code , in the **.env** file configuration related environment variables, environment variables as follows:
 
 **NOTION\_INTEGRATION\_TYPE** = internal or **NOTION\_INTEGRATION\_TYPE** = public
 
@@ -63,7 +63,7 @@ After your integration has been successfully made public in your [integration’
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-Back to the Dify source code , in the **.env** file configuration related environment variables , environment variables as follows:
+Back to the MoLook source code , in the **.env** file configuration related environment variables , environment variables as follows:
 
 **NOTION\_INTEGRATION\_TYPE**=public
 

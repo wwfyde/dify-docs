@@ -1,2 +1,2 @@
-# Launching Dify Apps
+# Launching MoLook Apps
 

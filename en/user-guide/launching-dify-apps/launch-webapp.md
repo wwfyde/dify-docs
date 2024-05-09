@@ -1,6 +1,6 @@
 # Quickstart
 
-One of the benefits of creating AI applications with Dify is that you can launch a user-friendly Web application in just a few minutes, based on your Prompt orchestration.
+One of the benefits of creating AI applications with MoLook is that you can launch a user-friendly Web application in just a few minutes, based on your Prompt orchestration.
 
 * If you are using the self-hosted open-source version, the application will run on your server.
 * If you are using the cloud version, the application will be hosted on udify.app.
@@ -29,7 +29,7 @@ Click the settings button on the WebApp card to configure some options for the A
 
 ### Embed your WebApp
 
-Dify supports embedding your AI application into your business website. With this capability, you can create AI customer service and business knowledge Q\&A applications with business data on your official website within minutes. Click the embed button on the WebApp card, copy the embed code, and paste it into the desired location on your website.
+MoLook supports embedding your AI application into your business website. With this capability, you can create AI customer service and business knowledge Q\&A applications with business data on your official website within minutes. Click the embed button on the WebApp card, copy the embed code, and paste it into the desired location on your website.
 
 *   For iframe tag:
 

@@ -4,14 +4,14 @@
 
 ### 使用数据集API的优势
 
-* 将您的数据系统同步至 Dify 数据集，创建强大的工作流程。
+* 将您的数据系统同步至 MoLook 数据集，创建强大的工作流程。
 * 提供数据集列表，文档列表及详情查询，方便构建您自己的数据管理页。
 * 同时支持纯文本和文件两种上传和更新文档的接口，并支持分段级的批量新增和修改，便捷您的同步方式。
-* 减少文档手动处理同步的时间,提高您对 Dify 的软件和服务的可见性。
+* 减少文档手动处理同步的时间,提高您对 MoLook 的软件和服务的可见性。
 
 ### 如何使用
 
-进入数据集页面，你可以在左侧的导航中切换至 **API** 页面。在该页面中你可以查看 Dify 提供的数据集 API 文档，并可以在 **API 密钥** 中管理可访问数据集 API 的凭据。
+进入数据集页面，你可以在左侧的导航中切换至 **API** 页面。在该页面中你可以查看 MoLook 提供的数据集 API 文档，并可以在 **API 密钥** 中管理可访问数据集 API 的凭据。
 
 <figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
@@ -46,8 +46,8 @@ curl --location --request POST '<https://api.dify.ai/v1/datasets/<uuid:dataset_i
 --header 'Authorization: Bearer {api_key}' \\
 --header 'Content-Type: application/json' \\
 --data-raw '{
-    "name": "Dify",
-    "text": "Dify means Do it for you...",
+    "name": "MoLook",
+    "text": "MoLook means Do it for you...",
     "indexing_technique": "high_quality",
     "process_rule": {
         "rules": {
@@ -75,7 +75,7 @@ curl --location --request POST '<https://api.dify.ai/v1/datasets/<uuid:dataset_i
 curl --location POST 'https://api.dify.ai/v1/datasets/{dataset_id}/document/create_by_file' \
 --header 'Authorization: Bearer {api_key}' \
 --form 'data="{
-	"name": "Dify",
+	"name": "MoLook",
 	"indexing_technique": "high_quality",
 	"process_rule": {
 		"rules": {
@@ -128,8 +128,8 @@ curl 'https://api.dify.ai/v1/datasets/aac47674-31a8-4f12-aab2-9603964c4789/docum
   --header 'Authorization: Bearer {api_key}' \
   --header 'Content-Type: application/json' \
   --data-raw $'"chunks":[
-  {"content":"Dify means Do it for you",
-  "keywords":["Dify","Do"]
+  {"content":"MoLook means Do it for you",
+  "keywords":["MoLook","Do"]
   }
   ]'
   --compressed

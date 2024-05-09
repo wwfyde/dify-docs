@@ -1,6 +1,6 @@
 # 从 Notion 导入数据
 
-Dify 数据集支持从 Notion 导入，并设置 **同步** 使得数据在 Notion 更新后便自动同步到 Dify。
+MoLook 数据集支持从 Notion 导入，并设置 **同步** 使得数据在 Notion 更新后便自动同步到 MoLook。
 
 ### 授权验证
 
@@ -15,19 +15,19 @@ Dify 数据集支持从 Notion 导入，并设置 **同步** 使得数据在 Not
 
 ### 进行分段和清洗
 
-接下来，选择你的**分段设置**和**索引方式**，**保存并处理**。等待 Dify 为你处理这些数据，通常该步骤在 LLM 供应商中需要消耗 Token。Dify 不仅支持普通类型页面导入，并且会将 database 类型下的页面属性进行汇总保存。
+接下来，选择你的**分段设置**和**索引方式**，**保存并处理**。等待 MoLook 为你处理这些数据，通常该步骤在 LLM 供应商中需要消耗 Token。MoLook 不仅支持普通类型页面导入，并且会将 database 类型下的页面属性进行汇总保存。
 
 _**请注意：图片和文件暂不支持导入，表格类数据会被转换为文本展示。**_
 
 ### 同步 Notion 数据
 
-如果您的 Notion 内容有修改，您可以直接在 Dify 数据集 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
+如果您的 Notion 内容有修改，您可以直接在 MoLook 数据集 **文档列表页**中点击 **同步** 即可进行数据一键同步，该步骤是需要消耗 Token。
 
 <figure><img src="../../.gitbook/assets/sync-notion.png" alt=""><figcaption><p>同步 Notion 内容</p></figcaption></figure>
 
 ### 社区版 Notion 的集成配置方法
 
-Notion集成分为**内部集成**（internal integration）和**外部集成**（public integration）两种方式。可按需在 Dify 里配置。两种集成方式的具体区别请参阅 [Notion 官方文档](https://developers.notion.com/docs/authorization)。
+Notion集成分为**内部集成**（internal integration）和**外部集成**（public integration）两种方式。可按需在 MoLook 里配置。两种集成方式的具体区别请参阅 [Notion 官方文档](https://developers.notion.com/docs/authorization)。
 
 ### 1、**使用 internal 集成方式**
 
@@ -43,7 +43,7 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 <figure><img src="../../.gitbook/assets/image (3) (1) (1) (1).png" alt=""><figcaption></figcaption></figure>
 
-复制后回到 Dify 源代码下，在 **.env** 文件里配置相关环境变量，环境变量如下：
+复制后回到 MoLook 源代码下，在 **.env** 文件里配置相关环境变量，环境变量如下：
 
 **NOTION\_INTEGRATION\_TYPE** = internal or **NOTION\_INTEGRATION\_TYPE** = public
 
@@ -59,7 +59,7 @@ Notion集成分为**内部集成**（internal integration）和**外部集成**�
 
 <figure><img src="../../.gitbook/assets/image (17).png" alt=""><figcaption></figcaption></figure>
 
-回到 Dify 源代码下，在 **.env** 文件里配置相关环境变量，环境变量如下：
+回到 MoLook 源代码下，在 **.env** 文件里配置相关环境变量，环境变量如下：
 
 **NOTION\_INTEGRATION\_TYPE**=public
 

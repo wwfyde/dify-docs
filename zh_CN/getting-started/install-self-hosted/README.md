@@ -1,11 +1,11 @@
 # 部署社区版
 
-Dify 社区版即开源版本，你可以通过以下两种方式之一部署 Dify 社区版：
+MoLook 社区版即开源版本，你可以通过以下两种方式之一部署 MoLook 社区版：
 
 * [Docker Compose 部署](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/docker-compose)
 * [本地源码启动](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/local-source-code)
 
-在 GitHub 上查看 [Dify 社区版](https://github.com/langgenius/dify)。
+在 GitHub 上查看 [MoLook 社区版](https://github.com/langgenius/dify)。
 
 ### 贡献代码
 

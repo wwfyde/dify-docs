@@ -3,14 +3,14 @@
 > Authentication, invocation method and application Service API remain consistent. The difference is that a knowledge API token can operate on all knowledge bases.
 
 ### Benefits of Using the Knowledge API
-* Sync your data systems to Dify knowledge to create powerful workflows.
+* Sync your data systems to MoLook knowledge to create powerful workflows.
 * Provide knowledge list and document list APIs as well as detail query interfaces, to facilitate building your own data management page.
 * Support both plain text and file uploads/updates documents, as well as batch additions and modifications, to simplify your sync process.
-* Reduce manual document handling and syncing time, improving visibility of Dify's software and services.
+* Reduce manual document handling and syncing time, improving visibility of MoLook's software and services.
 
 ### How to use
 
-Please go to the knowledge page, you can switch tap to the API page in the navigation on the left side. On this page, you can view the API documentation provided by Dify and manage credentials for accessing the Knowledge API.
+Please go to the knowledge page, you can switch tap to the API page in the navigation on the left side. On this page, you can view the API documentation provided by MoLook and manage credentials for accessing the Knowledge API.
 
 <figure><img src="../../.gitbook/assets/dataset-api-token.png" alt=""><figcaption><p>Knowledge API Document</p></figcaption></figure>
 
@@ -46,8 +46,8 @@ curl --location --request POST '<https://api.dify.ai/v1/datasets/<uuid:dataset_i
 --header 'Authorization: Bearer {api_key}' \\
 --header 'Content-Type: application/json' \\
 --data-raw '{
-    "name": "Dify",
-    "text": "Dify means Do it for you...",
+    "name": "MoLook",
+    "text": "MoLook means Do it for you...",
     "indexing_technique": "high_quality",
     "process_rule": {
         "rules": {
@@ -75,7 +75,7 @@ curl --location --request POST '<https://api.dify.ai/v1/datasets/<uuid:dataset_i
 curl --location POST 'https://api.dify.ai/v1/datasets/{dataset_id}/document/create_by_file' \
 --header 'Authorization: Bearer {api_key}' \
 --form 'data="{
-	"name": "Dify",
+	"name": "MoLook",
 	"indexing_technique": "high_quality",
 	"process_rule": {
 		"rules": {
@@ -129,8 +129,8 @@ curl 'https://api.dify.ai/v1/datasets/aac47674-31a8-4f12-aab2-9603964c4789/docum
   --header 'Authorization: Bearer {api_key}' \
   --header 'Content-Type: application/json' \
   --data-raw $'"segments":[
-  {"content":"Dify means Do it for you",
-  "keywords":["Dify","Do"]
+  {"content":"MoLook means Do it for you",
+  "keywords":["MoLook","Do"]
   }
   ]'
   --compressed

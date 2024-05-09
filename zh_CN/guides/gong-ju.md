@@ -2,30 +2,30 @@
 
 ### 工具定义
 
-工具可以扩展 LLM 的能力，比如联网搜索、科学计算或绘制图片，赋予并增强了 LLM 连接外部世界的能力。Dify 提供了两种工具类型：**第一方工具**和**自定义工具**。
+工具可以扩展 LLM 的能力，比如联网搜索、科学计算或绘制图片，赋予并增强了 LLM 连接外部世界的能力。MoLook 提供了两种工具类型：**第一方工具**和**自定义工具**。
 
-你可以直接使用 Dify 生态提供的第一方内置工具，或者轻松导入自定义的 API 工具（目前支持 OpenAPI / Swagger 和 OpenAI Plugin 规范）。
+你可以直接使用 MoLook 生态提供的第一方内置工具，或者轻松导入自定义的 API 工具（目前支持 OpenAPI / Swagger 和 OpenAI Plugin 规范）。
 
 #### 工具的作用：
 
-1. 工具使用户可以在 Dify 上创建更强大的 AI 应用，如你可以为智能助理型应用（Agent）编排合适的工具，它可以通过任务推理、步骤拆解、调用工具完成复杂任务。
+1. 工具使用户可以在 MoLook 上创建更强大的 AI 应用，如你可以为智能助理型应用（Agent）编排合适的工具，它可以通过任务推理、步骤拆解、调用工具完成复杂任务。
 2. 方便将你的应用与其他系统或服务连接，与外部环境交互，如代码执行、对专属信息源的访问等。
 
 ### 如何配置第一方工具
 
 <figure><img src="../.gitbook/assets/image (131).png" alt=""><figcaption><p>第一方工具列表</p></figcaption></figure>
 
-Dify 目前已支持：
+MoLook 目前已支持：
 
 <table><thead><tr><th width="154">工具</th><th>工具描述</th></tr></thead><tbody><tr><td>谷歌搜索</td><td>用于执行 Google SERP 搜索并提取片段和网页的工具。输入应该是一个搜索查询</td></tr><tr><td>维基百科</td><td>用于执行维基百科搜索并提取片段和网页的工具。</td></tr><tr><td>DALL-E 绘画</td><td>用于通过自然语言输入生成高质量图片</td></tr><tr><td>网页抓取</td><td>用于爬取网页数据的工具</td></tr><tr><td>WolframAlpha</td><td>一个强大的计算知识引擎，能根据问题直接给出标准化答案，同时具有强大的数学计算功能</td></tr><tr><td>图表生成</td><td>用于生成可视化图表的工具，你可以通过它来生成柱状图、折线图、饼图等各类图表</td></tr><tr><td>当前时间</td><td>用于查询当前时间的工具</td></tr><tr><td>雅虎财经</td><td>获取并整理出最新的新闻、股票报价等一切你想要的财经信息。</td></tr><tr><td>Stable Diffusion</td><td>一个可以在本地部署的图片生成的工具，您可以使用 stable-diffusion-webui 来部署它</td></tr><tr><td>Vectorizer</td><td>一个将 PNG 和 JPG 图像快速轻松地转换为 SVG 矢量图的工具。</td></tr><tr><td>YouTube</td><td>一个用于获取油管频道视频统计数据的工具</td></tr></tbody></table>
 
 {% hint style="info" %}
-欢迎您为 Dify 贡献自己开发的工具，关于如何贡献的具体方法请查看 [Dify 开发贡献文档](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md)，您的任何支持对我们都是极为宝贵的。
+欢迎您为 MoLook 贡献自己开发的工具，关于如何贡献的具体方法请查看 [MoLook 开发贡献文档](https://github.com/langgenius/dify/blob/main/CONTRIBUTING.md)，您的任何支持对我们都是极为宝贵的。
 {% endhint %}
 
 #### 第一方工具授权
 
-若你需要直接使用 Dify 生态提供的第一方内置工具，你需要在使用前配置相应的凭据。
+若你需要直接使用 MoLook 生态提供的第一方内置工具，你需要在使用前配置相应的凭据。
 
 <figure><img src="../.gitbook/assets/image (134).png" alt=""><figcaption><p>配置第一方工具凭据</p></figcaption></figure>
 
@@ -53,7 +53,7 @@ Dify 目前已支持：
 
 您也可以使用 [dify-tools-worker](https://github.com/crazywoola/dify-tools-worker) 来快速部署自定义工具。该工具提供了：
 
-* 可以导入 Dify 的路由 `https://difytoolsworker.yourname.workers.dev/doc`, 提供了 OpenAPI 兼容的接口文档
+* 可以导入 MoLook 的路由 `https://difytoolsworker.yourname.workers.dev/doc`, 提供了 OpenAPI 兼容的接口文档
 * API 的实现代码，可以直接部署到 Cloudflare Workers
 
 ### 如何在应用内使用工具

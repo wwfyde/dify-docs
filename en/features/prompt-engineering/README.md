@@ -1,8 +1,8 @@
 # Prompting Expert Mode
 
-Currently, the orchestration for creating apps in Dify is set to **Basic Mode** by default. This is ideal for non-tech-savvy individuals who want to quickly make an app. For example, if you want to create a corporate knowledge-base ChatBot or an article summary Generator, you can use the **Basic Mode** to design `Pre-prompt` words, add `Query`, integrate `Context`, and other straightforward steps to launch a complete app. For more head to 👉 [text-generation-application.md](../../user-guide/creating-dify-apps/prompt-engineering/text-generation-application.md "mention") and [conversation-application.md](../../user-guide/creating-dify-apps/prompt-engineering/conversation-application.md "mention").
+Currently, the orchestration for creating apps in MoLook is set to **Basic Mode** by default. This is ideal for non-tech-savvy individuals who want to quickly make an app. For example, if you want to create a corporate knowledge-base ChatBot or an article summary Generator, you can use the **Basic Mode** to design `Pre-prompt` words, add `Query`, integrate `Context`, and other straightforward steps to launch a complete app. For more head to 👉 [text-generation-application.md](../../user-guide/creating-dify-apps/prompt-engineering/text-generation-application.md "mention") and [conversation-application.md](../../user-guide/creating-dify-apps/prompt-engineering/conversation-application.md "mention").
 
-💡However, you surely want to design prompts in a more customized manner if you're a developer who has conducted in-depth research on prompts, then you should opt for the **Expert Mode**. In this mode, you are granted permission to customize comprehensive prompts rather than using the pre-packaged prompts from Dify. You can modify the built-in prompts, rearrange the placement of `Context` and `History` , set necessary parameters, and more. If you're familiar with the OpenAI's Playground, you can get up to speed with this mode more quickly.
+💡However, you surely want to design prompts in a more customized manner if you're a developer who has conducted in-depth research on prompts, then you should opt for the **Expert Mode**. In this mode, you are granted permission to customize comprehensive prompts rather than using the pre-packaged prompts from MoLook. You can modify the built-in prompts, rearrange the placement of `Context` and `History` , set necessary parameters, and more. If you're familiar with the OpenAI's Playground, you can get up to speed with this mode more quickly.
 
 ***
 
@@ -43,7 +43,7 @@ Well, before you try the new mode, you should be aware of some essential element
 
     <img src="../../.gitbook/assets/history (1).png" alt="" data-size="line">
 
-    The conversation history is only available in the Text completion model of conversational applications. When engaging in multiple conversations in dialogue applications, Dify will assemble and concatenate the historical dialogue records according to built-in rules and replace the 'Conversation History' variable. The `Human` and `Assistant` prefixes can be modified by clicking on the `...` after "Conversation History".\\
+    The conversation history is only available in the Text completion model of conversational applications. When engaging in multiple conversations in dialogue applications, MoLook will assemble and concatenate the historical dialogue records according to built-in rules and replace the 'Conversation History' variable. The `Human` and `Assistant` prefixes can be modified by clicking on the `...` after "Conversation History".\\
 *   **Prompt Template**
 
     In this mode, before formal orchestration, an initial template is provided in the prompt box. We can directly modify this template to have more customized requirements for LLM. Different types of applications have variations in different modes.

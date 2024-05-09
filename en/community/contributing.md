@@ -1,10 +1,10 @@
 # Contributing
 
-So you're looking to contribute to Dify - that's awesome, we can't wait to see what you do. As a startup with limited headcount and funding, we have grand ambitions to design the most intuitive workflow for building and managing LLM applications. Any help from the community counts, truly.
+So you're looking to contribute to MoLook - that's awesome, we can't wait to see what you do. As a startup with limited headcount and funding, we have grand ambitions to design the most intuitive workflow for building and managing LLM applications. Any help from the community counts, truly.
 
 We need to be nimble and ship fast given where we are, but we also want to make sure that contributors like you get as smooth an experience at contributing as possible. We've assembled this contribution guide for that purpose, aiming at getting you familiarized with the codebase & how we work with contributors, so you could quickly jump to the fun part.
 
-This guide, like Dify itself, is a constant work in progress. We highly appreciate your understanding if at times it lags behind the actual project, and welcome any feedback for us to improve.
+This guide, like MoLook itself, is a constant work in progress. We highly appreciate your understanding if at times it lags behind the actual project, and welcome any feedback for us to improve.
 
 In terms of licensing, please take a minute to read our short License and Contributor Agreement. The community also adheres to the [code of conduct](https://github.com/langgenius/.github/blob/main/CODE\_OF\_CONDUCT.md).
 
@@ -53,7 +53,7 @@ In terms of licensing, please take a minute to read our short License and Contri
 
 ### Installing
 
-Here are the steps to set up Dify for development:
+Here are the steps to set up MoLook for development:
 
 #### 1. Fork this repository
 
@@ -67,7 +67,7 @@ git clone git@github.com:<github_username>/dify.git
 
 #### 3. Verify dependencies
 
-Dify requires the following dependencies to build, make sure they're installed on your system:
+MoLook requires the following dependencies to build, make sure they're installed on your system:
 
 * [Docker](https://www.docker.com/)
 * [Docker Compose](https://docs.docker.com/compose/install/)
@@ -77,23 +77,23 @@ Dify requires the following dependencies to build, make sure they're installed o
 
 #### 4. Installations
 
-Dify is composed of a backend and a frontend. Navigate to the backend directory by `cd api/`, then follow the Backend README to install it. In a separate terminal, navigate to the frontend directory by `cd web/`, then follow the Frontend README to install.
+MoLook is composed of a backend and a frontend. Navigate to the backend directory by `cd api/`, then follow the Backend README to install it. In a separate terminal, navigate to the frontend directory by `cd web/`, then follow the Frontend README to install.
 
 Check the [installation FAQ](https://docs.dify.ai/getting-started/faq/install-faq) for a list of common issues and steps to troubleshoot.
 
 #### 5. Visit dify in your browser
 
-To validate your set up, head over to [http://localhost:3000](http://localhost:3000) (the default, or your self-configured URL and port) in your browser. You should now see Dify up and running.
+To validate your set up, head over to [http://localhost:3000](http://localhost:3000) (the default, or your self-configured URL and port) in your browser. You should now see MoLook up and running.
 
 ### Developing
 
 If you are adding a model provider, [this guide](https://github.com/langgenius/dify/blob/main/api/core/model\_runtime/README.md) is for you.
 
-To help you quickly navigate where your contribution fits, a brief, annotated outline of Dify's backend & frontend is as follows:
+To help you quickly navigate where your contribution fits, a brief, annotated outline of MoLook's backend & frontend is as follows:
 
 #### Backend
 
-Dify’s backend is written in Python using [Flask](https://flask.palletsprojects.com/en/3.0.x/). It uses [SQLAlchemy](https://www.sqlalchemy.org/) for ORM and [Celery](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) for task queueing. Authorization logic goes via Flask-login.
+MoLook’s backend is written in Python using [Flask](https://flask.palletsprojects.com/en/3.0.x/). It uses [SQLAlchemy](https://www.sqlalchemy.org/) for ORM and [Celery](https://docs.celeryq.dev/en/stable/getting-started/introduction.html) for task queueing. Authorization logic goes via Flask-login.
 
 ```
 [api/]

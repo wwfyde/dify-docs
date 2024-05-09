@@ -5,15 +5,15 @@
 * `moderation` 敏感内容审计
 * `external_data_tool` 外部数据工具
 
-在扩展模块能力之前，您需要准备一个 API 和用于鉴权的 API Key（也可由 Dify 自动生成，可选）。
+在扩展模块能力之前，您需要准备一个 API 和用于鉴权的 API Key（也可由 MoLook 自动生成，可选）。
 
-除了需要开发对应的模块能力，还需要遵照以下规范，以便 Dify 正确调用 API。
+除了需要开发对应的模块能力，还需要遵照以下规范，以便 MoLook 正确调用 API。
 
 <figure><img src="../../../../.gitbook/assets/api_based_01.png" alt=""><figcaption><p>基于 API 扩展</p></figcaption></figure>
 
 ### API 规范 <a href="#usercontentapi-gui-fan" id="usercontentapi-gui-fan"></a>
 
-Dify 将会以以下规范调用您的接口：
+MoLook 将会以以下规范调用您的接口：
 
 ```
 POST {Your-API-Endpoint}
@@ -47,7 +47,7 @@ POST {Your-API-Endpoint}
 
 ### 校验 <a href="#usercontent-xiao-yan" id="usercontent-xiao-yan"></a>
 
-在 Dify 配置 API-based Extension 时，Dify 将会发送一个请求至 API Endpoint，以检验 API 的可用性。
+在 MoLook 配置 API-based Extension 时，MoLook 将会发送一个请求至 API Endpoint，以检验 API 的可用性。
 
 当 API Endpoint 接收到 `point=ping` 时，接口应返回 `result=pong`，具体如下：
 
@@ -141,7 +141,7 @@ Authorization: Bearer 123456
     @app.post("/api/dify/receive")
     async def dify_receive(data: InputData = Body(...), authorization: str = Header(None)):
         """
-        Receive API query data from Dify.
+        Receive API query data from MoLook.
         """
         expected_api_key = "123456"  # TODO Your API key of this API
         auth_scheme, _, api_key = authorization.partition(' ')
@@ -192,7 +192,7 @@ Authorization: Bearer 123456
 
     <pre><code><strong>uvicorn main:app --reload --host 0.0.0.0
     </strong></code></pre>
-4. 在 Dify 配置该 API。
+4. 在 MoLook 配置该 API。
 
 <figure><img src="https://github.com/langgenius/dify-docs/raw/main/zh_CN/.gitbook/assets/api_based_01.png" alt=""><figcaption><p>配置 API</p></figcaption></figure>
 
@@ -200,7 +200,7 @@ Authorization: Bearer 123456
 
 <figure><img src="https://github.com/langgenius/dify-docs/raw/main/zh_CN/.gitbook/assets/api_based_02.png" alt=""><figcaption><p>选择扩展</p></figcaption></figure>
 
-App 调试时，Dify 将请求配置的 API，并发送以下内容（范例）：
+App 调试时，MoLook 将请求配置的 API，并发送以下内容（范例）：
 
 ```
 {
@@ -226,7 +226,7 @@ API 返回为：
 
 ### 本地调试
 
-由于 Dify 云端版无法访问内网 API 服务，为了方便本地调试 API 服务，可以使用 [Ngrok](https://ngrok.com) 将 API 服务的端点暴露到公网，实现云端调试本地代码。操作步骤：
+由于 MoLook 云端版无法访问内网 API 服务，为了方便本地调试 API 服务，可以使用 [Ngrok](https://ngrok.com) 将 API 服务的端点暴露到公网，实现云端调试本地代码。操作步骤：
 
 1.  进入 [https://ngrok.com](https://ngrok.com) 官网，注册并下载 Ngrok 文件。
 
@@ -254,7 +254,7 @@ API 返回为：
 
 * 按照上述的范例，我们把本地已经启动的服务端点暴露出去，将代码范例接口：`http://127.0.0.1:8000/api/dify/receive` 替换为 `https://177e-159-223-41-52.ngrok-free.app/api/dify/receive`
 
-此 API 端点即可公网访问。至此，我们即可在 Dify 配置该 API 端点进行本地调试代码，配置步骤请参考 [external\_data\_tool.md](../../../knowledge-base/external\_data\_tool.md "mention")。
+此 API 端点即可公网访问。至此，我们即可在 MoLook 配置该 API 端点进行本地调试代码，配置步骤请参考 [external\_data\_tool.md](../../../knowledge-base/external\_data\_tool.md "mention")。
 
 
 ### 使用 Cloudflare Workers 部署 API 扩展

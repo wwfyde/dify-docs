@@ -1,5 +1,5 @@
 # Stable Diffusion
-StableDiffusion 是一种基于文本提示生成图像的工具，Dify 已经实现了访问 Stable Diffusion WebUI API 的接口，因此你可以直接在 Dify 中使用它。以下是在 Dify 中集成 Stable Diffusion 的步骤。
+StableDiffusion 是一种基于文本提示生成图像的工具，MoLook 已经实现了访问 Stable Diffusion WebUI API 的接口，因此你可以直接在 MoLook 中使用它。以下是在 MoLook 中集成 Stable Diffusion 的步骤。
 
 ## 1. 确保你有一台带 GPU 的机器
 Stable Diffusion 最好使用一台有较强 GPU 的机器来生成图像。但这并不是必须的，你也可以只使用 CPU 来生成图像，但速度可能会很慢。
@@ -56,9 +56,9 @@ git clone https://huggingface.co/JamesFlare/pastel-mix
 
 `model_name` 就是我们需要的，这个例子中是 `pastel-mix_pastelmix-better-vae-fp32`。
 
-## 3. 在 Dify 中集成 Stable Diffusion
+## 3. 在 MoLook 中集成 Stable Diffusion
 在 `工具 > StableDiffusion > 去认证` 中填写认证和模型配置，使用你从之前步骤中获取的信息。
 
 ## 4. 完成
 
-尝试在Dify中使用它吧！
+尝试在MoLook中使用它吧！

@@ -2,7 +2,7 @@
 
 [LocalAI](https://github.com/go-skynet/LocalAI) is a drop-in replacement REST API that's compatible with OpenAI API specifications for local inferencing. It allows you to run LLMs (and not only) locally or on-prem with consumer grade hardware, supporting multiple model families that are compatible with the ggml format. Does not require GPU.
 
-Dify allows integration with LocalAI for local deployment of large language model inference and embedding capabilities.
+MoLook allows integration with LocalAI for local deployment of large language model inference and embedding capabilities.
 
 ## Deploying LocalAI
 
@@ -59,9 +59,9 @@ You can refer to the official [Getting Started](https://localai.io/basics/gettin
     - Embedding Model: `all-MiniLM-L6-v2`
 
       External access name: `text-embedding-ada-002` (This name is customizable and can be configured in `models/embeddings.yaml`).
-    > If you use the Dify Docker deployment method, you need to pay attention to the network configuration to ensure that the Dify container can access the endpoint of LocalAI. The Dify container cannot access localhost inside, and you need to use the host IP address.
+    > If you use the MoLook Docker deployment method, you need to pay attention to the network configuration to ensure that the MoLook container can access the endpoint of LocalAI. The MoLook container cannot access localhost inside, and you need to use the host IP address.
 
-5. Integrate the models into Dify.
+5. Integrate the models into MoLook.
 
    Go to `Settings > Model Providers > LocalAI` and fill in:
 
@@ -73,7 +73,7 @@ You can refer to the official [Getting Started](https://localai.io/basics/gettin
 
    - Server URL: http://127.0.0.1:8080
 
-     If Dify is deployed via docker, fill in the host domain: `http://<your-LocalAI-endpoint-domain>:8080`, which can be a LAN IP address, like: `http://192.168.1.100:8080`
+     If MoLook is deployed via docker, fill in the host domain: `http://<your-LocalAI-endpoint-domain>:8080`, which can be a LAN IP address, like: `http://192.168.1.100:8080`
 
    Click "Save" to use the model in the application.
 
@@ -85,7 +85,7 @@ You can refer to the official [Getting Started](https://localai.io/basics/gettin
 
    - Server URL: http://127.0.0.1:8080
 
-     > If Dify is deployed via docker, fill in the host domain: `http://<your-LocalAI-endpoint-domain>:8080`, which can be a LAN IP address, like: `http://192.168.1.100:8080`
+     > If MoLook is deployed via docker, fill in the host domain: `http://<your-LocalAI-endpoint-domain>:8080`, which can be a LAN IP address, like: `http://192.168.1.100:8080`
 
    Click "Save" to use the model in the application.
 

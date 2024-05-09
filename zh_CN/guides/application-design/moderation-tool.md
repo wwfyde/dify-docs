@@ -6,7 +6,7 @@
 
 ### 功能一：调用 OpenAI Moderation API
 
-OpenAI 和大多数 LLM 公司提供的模型，都带有内容审查功能，确保不会输出包含有争议的内容，比如暴力，性和非法行为，并且 OpenAI 还开放了这种内容审查能力，具体可以参考 [platform.openai.com](https://platform.openai.com/docs/guides/moderation/overview) 。现在你也可以直接在 Dify 上调用 OpenAI Moderation API，你可以审核输入内容或输出内容，只要输入对应的“预设回复”即可。
+OpenAI 和大多数 LLM 公司提供的模型，都带有内容审查功能，确保不会输出包含有争议的内容，比如暴力，性和非法行为，并且 OpenAI 还开放了这种内容审查能力，具体可以参考 [platform.openai.com](https://platform.openai.com/docs/guides/moderation/overview) 。现在你也可以直接在 MoLook 上调用 OpenAI Moderation API，你可以审核输入内容或输出内容，只要输入对应的“预设回复”即可。
 
 <figure><img src="../../.gitbook/assets/moderation2.png" alt=""><figcaption><p>OpenAI Moderation API</p></figcaption></figure>
 
@@ -18,7 +18,7 @@ OpenAI 和大多数 LLM 公司提供的模型，都带有内容审查功能，�
 
 ### 功能三： 敏感词审查 Moderation 扩展
 
-不同的企业内部往往有着不同的敏感词审查机制，企业在开发自己的 AI 应用如企业内部知识库 ChatBot，需要对员工输入的查询内容作敏感词审查。为此，开发者可以根据自己企业内部的敏感词审查机制写一个 API 扩展，具体可参考 [moderation.md](extension/api\_based\_extension/moderation.md "mention")，从而在 Dify 上调用，实现敏感词审查的高度自定义和隐私保护。
+不同的企业内部往往有着不同的敏感词审查机制，企业在开发自己的 AI 应用如企业内部知识库 ChatBot，需要对员工输入的查询内容作敏感词审查。为此，开发者可以根据自己企业内部的敏感词审查机制写一个 API 扩展，具体可参考 [moderation.md](extension/api\_based\_extension/moderation.md "mention")，从而在 MoLook 上调用，实现敏感词审查的高度自定义和隐私保护。
 
 <figure><img src="../../.gitbook/assets/moderation_settings.png" alt=""><figcaption><p>Moderation Settings</p></figcaption></figure>
 

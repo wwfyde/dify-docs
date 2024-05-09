@@ -1,6 +1,6 @@
 # Quickstart
 
-In Dify, an "application" refers to a real-world scenario application built on large language models such as GPT. By creating an application, you can apply intelligent AI technology to specific needs. It encompasses both the engineering paradigms for developing AI applications and the specific deliverables.
+In MoLook, an "application" refers to a real-world scenario application built on large language models such as GPT. By creating an application, you can apply intelligent AI technology to specific needs. It encompasses both the engineering paradigms for developing AI applications and the specific deliverables.
 
 **In short, an application delivers to developers:**
 
@@ -12,13 +12,13 @@ You can choose one or all of them to support your AI application development.
 
 ### Application Types
 
-Dify offers two types of applications: text generation and conversational. More application paradigms may appear in the future (we should keep up-to-date), and the ultimate goal of Dify is to cover more than 80% of typical LLM application scenarios. The differences between text generation and conversational applications are shown in the table below:
+MoLook offers two types of applications: text generation and conversational. More application paradigms may appear in the future (we should keep up-to-date), and the ultimate goal of MoLook is to cover more than 80% of typical LLM application scenarios. The differences between text generation and conversational applications are shown in the table below:
 
 <table><thead><tr><th width="199.33333333333331"></th><th>Text Generator</th><th>Chat App</th></tr></thead><tbody><tr><td>WebApp Interface</td><td>Form + Results</td><td>Chat style</td></tr><tr><td>API Endpoint</td><td><code>completion-messages</code></td><td><code>chat-messages</code></td></tr><tr><td>Interaction Mode</td><td>One question and one answer</td><td>Multi-turn dialogue</td></tr><tr><td>Streaming results return</td><td>Supported</td><td>Supported</td></tr><tr><td>Context Preservation</td><td>Current time</td><td>Continuous</td></tr><tr><td>User input form</td><td>Supported</td><td>Supported</td></tr><tr><td>Knowledge&#x26;Plugins</td><td>Supported</td><td>Supported</td></tr><tr><td>AI opening remarks</td><td>Not supported</td><td>Supported</td></tr><tr><td>Scenario example</td><td>Translation, judgment, indexing</td><td>Chat or everything</td></tr></tbody></table>
 
 ### Steps to Create an Application
 
-After logging in as an administrator in Dify, go to the main navigation application page Click "Create New Application" Choose a conversational or text generation application and give it a name (modifiable later)
+After logging in as an administrator in MoLook, go to the main navigation application page Click "Create New Application" Choose a conversational or text generation application and give it a name (modifiable later)
 
 <figure><img src="../../.gitbook/assets/create a new App.png" alt=""><figcaption><p>Create a new App</p></figcaption></figure>
 
@@ -30,7 +30,7 @@ If you have obtained a template from the community or someone else, you can clic
 
 ### Your Application
 
-If you are using it for the first time, you will be prompted to enter your OpenAI API key. A properly functioning LLM key is a prerequisite for using Dify. If you don't have one yet, please apply for one.
+If you are using it for the first time, you will be prompted to enter your OpenAI API key. A properly functioning LLM key is a prerequisite for using MoLook. If you don't have one yet, please apply for one.
 
 <figure><img src="../../.gitbook/assets/OpenAI API Key.png" alt=""><figcaption><p>Enter your OpenAI API Key</p></figcaption></figure>
 

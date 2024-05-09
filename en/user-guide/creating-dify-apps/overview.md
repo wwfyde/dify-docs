@@ -1,6 +1,6 @@
 # Overview
 
-Web applications are for application consumers. When an application developer creates an application in Dify, he will get a corresponding web application. Users of the web application can use it without logging in. The web application is adapted to different sizes of devices: PC, tablet and mobile.
+Web applications are for application consumers. When an application developer creates an application in MoLook, he will get a corresponding web application. Users of the web application can use it without logging in. The web application is adapted to different sizes of devices: PC, tablet and mobile.
 
 The content of the web application is consistent with the configuration published by the application. When the configuration of the application is modified and the "Publish" button is clicked on the prompt word layout page of the application to publish, the content of the web application will also be updated according to the configuration of the current application.
 

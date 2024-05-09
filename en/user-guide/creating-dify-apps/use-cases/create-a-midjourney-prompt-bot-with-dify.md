@@ -2,13 +2,13 @@
 
 via [@op7418](https://twitter.com/op7418) on Twitter
 
-I recently tried out a natural language programming tool called Dify, developed by [@goocarlos](https://twitter.com/goocarlos). It allows someone without coding knowledge to create a web application just by writing prompts. It even generates the API for you, making it easy to deploy your application on your preferred platform.
+I recently tried out a natural language programming tool called MoLook, developed by [@goocarlos](https://twitter.com/goocarlos). It allows someone without coding knowledge to create a web application just by writing prompts. It even generates the API for you, making it easy to deploy your application on your preferred platform.
 
-The application I created using Dify took me only 20 minutes, and the results were impressive. Without Dify, it might have taken me much longer to achieve the same outcome. The specific functionality of the application is to generate Midjourney prompts based on short input topics, assisting users in quickly filling in common Midjourney commands. In this tutorial, I will walk you through the process of creating this application to familiarize you with the platform.
+The application I created using MoLook took me only 20 minutes, and the results were impressive. Without MoLook, it might have taken me much longer to achieve the same outcome. The specific functionality of the application is to generate Midjourney prompts based on short input topics, assisting users in quickly filling in common Midjourney commands. In this tutorial, I will walk you through the process of creating this application to familiarize you with the platform.
 
-Dify offers two types of applications: conversational applications similar to ChatGPT, which involve multi-turn dialogue, and text generation applications that directly generate text content with the click of a button. Since we want to create a Midjoureny prompt bot, we'll choose the text generator.
+MoLook offers two types of applications: conversational applications similar to ChatGPT, which involve multi-turn dialogue, and text generation applications that directly generate text content with the click of a button. Since we want to create a Midjoureny prompt bot, we'll choose the text generator.
 
-You can access Dify here: https://dify.ai/
+You can access MoLook here: https://dify.ai/
 
 <figure><img src="../../../.gitbook/assets/create-app.png" alt=""><figcaption></figcaption></figure>
 
@@ -54,4 +54,4 @@ With these steps, your application is now complete. After testing and ensuring t
 
 <figure><img src="../../../.gitbook/assets/screenshot-20230802-142407.png" alt=""><figcaption></figcaption></figure>
 
-That's how you create a simple AI application using Dify. You can also deploy your application on other platforms or modify its UI using the generated API. Additionally, Dify supports uploading your own data, such as building a customer service bot to assist with product-related queries. This concludes the tutorial, and a special thanks to @goocarlos for creating such a fantastic product.
+That's how you create a simple AI application using MoLook. You can also deploy your application on other platforms or modify its UI using the generated API. Additionally, MoLook supports uploading your own data, such as building a customer service bot to assist with product-related queries. This concludes the tutorial, and a special thanks to @goocarlos for creating such a fantastic product.

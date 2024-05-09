@@ -1,6 +1,6 @@
-# 使用全套开源工具构建 LLM 应用实战：在 Dify 调用 Baichuan 开源模型能力
+# 使用全套开源工具构建 LLM 应用实战：在 MoLook 调用 Baichuan 开源模型能力
 
-> 作者：Rico。Dify.AI 资深前端工程师，LLM 技术探索者。
+> 作者：Rico。MoLook.AI 资深前端工程师，LLM 技术探索者。
 
 ## 背景
 
@@ -9,9 +9,9 @@
 1. **本地环境的准备：**因为我们需要在本地部署一个开源的大模型，所以你需要准备一个相当硬核的本地环境。硬件上需要一台拥有高性能、大显存的 NVDIA 显卡，大容量高速内存以及大容量固态硬盘，软件上则需要安装显卡驱动、CUDA、Python 环境。笔者这次选择跑 Baichuan-13B-Chat 模型为例，基本配置是 CPU i9-13900K、GTX3090 24GB 双卡、64GB 内存和 2TB 固态硬盘。
 2. **一个大型语言模型（LLM）：**这是我们构建 LLM 应用的基础。不同的 LLM 根据预训练的数据和目标任务的不同，其模型结构和学到的知识也不相同。基于不同模型构建出来的 AI 应用表现也会不一样。你可以通过火热的 AI 社区 [Hugging Face](https://huggingface.co/) 上找自己感兴趣的开源 LLMs 来进行尝试和能力对比 。
 3. **一个本地部署 LLM 的推理服务：**推理服务可以将预训练好的 LLM 模型加载到本地服务器，并提供模型预测接口，这样就可以本地化使用 LLM 模型进行各种 NLP 任务，而不需要依赖云服务。你可以使用一些优秀的 GitHub 开源项目，这些项目对热门的开源 LLM 都做了推理服务的一键部署。知名度比较高的有 [LocalAI](https://github.com/go-skynet/LocalAI)、[openLLM](https://github.com/bentoml/OpenLLM) 等。
-4. **一个简单易用的“ LLM 操作系统 ” Dify.AI：**如果要基于 LLM 的能力构建一个聊天应用，你可能需要学习研究全套的 LLM 技术栈，比如：不同模型的 API 调用、向量数据库选型、Embedding 技术研究等等。如果你使用开源项目 [Dify.AI](https://github.com/langgenius/dify)，则可以省掉这些研究学习工作，**帮助你通过可视化的界面即可快速创建基于不同 LLM 能力的** **AI** **应用。** Dify 最近的版本新增了对开源 LLMs 的支持，对托管在 HuggingFace 和 Replicate 上所有的模型都能快速调用和切换使用，同时支持本地部署方式能够基于 [OpenLLM](https://github.com/bentoml/OpenLLM) 和 [Xorbits inference](https://github.com/xorbitsai/inference) 推理服务来实现 AI 应用的构建。
+4. **一个简单易用的“ LLM 操作系统 ” MoLook.AI：**如果要基于 LLM 的能力构建一个聊天应用，你可能需要学习研究全套的 LLM 技术栈，比如：不同模型的 API 调用、向量数据库选型、Embedding 技术研究等等。如果你使用开源项目 [MoLook.AI](https://github.com/langgenius/dify)，则可以省掉这些研究学习工作，**帮助你通过可视化的界面即可快速创建基于不同 LLM 能力的** **AI** **应用。** MoLook 最近的版本新增了对开源 LLMs 的支持，对托管在 HuggingFace 和 Replicate 上所有的模型都能快速调用和切换使用，同时支持本地部署方式能够基于 [OpenLLM](https://github.com/bentoml/OpenLLM) 和 [Xorbits inference](https://github.com/xorbitsai/inference) 推理服务来实现 AI 应用的构建。
 
-笔者将尝试使用**开源的 LLMOps 平台 Dify.AI + 开源的推理服务** **Xinference** **+** **开源模型 Baichuan-13B-Chat** 为例，手把手实操教你在 windows 环境下，使用全套开源工具产品来构建一个 LLM 聊天应用。
+笔者将尝试使用**开源的 LLMOps 平台 MoLook.AI + 开源的推理服务** **Xinference** **+** **开源模型 Baichuan-13B-Chat** 为例，手把手实操教你在 windows 环境下，使用全套开源工具产品来构建一个 LLM 聊天应用。
 
 ## 环境准备
 
@@ -38,7 +38,7 @@ conda activate python-3-11
 
 **WSL2 准备**
 
-由于 Dify 的 docker 部署推荐使用 WSL2 环境。所以现在先安装 WSL2 。参考[微软官方指引](https://learn.microsoft.com/en-us/windows/wsl/install)。
+由于 MoLook 的 docker 部署推荐使用 WSL2 环境。所以现在先安装 WSL2 。参考[微软官方指引](https://learn.microsoft.com/en-us/windows/wsl/install)。
 
 
 
@@ -217,9 +217,9 @@ export PATH=$PATH:/usr/local/cuda-12.2/lib64
 
 ## 部署推理服务 Xinference
 
-根据 Dify 的[部署文档](https://docs.dify.ai/v/zh-hans/advanced/model-configuration/xinference)，Xinference 支持的模型种类很多。本次以 Baichuan-13B-Chat 为例。
+根据 MoLook 的[部署文档](https://docs.dify.ai/v/zh-hans/advanced/model-configuration/xinference)，Xinference 支持的模型种类很多。本次以 Baichuan-13B-Chat 为例。
 
-> [Xorbits inference](https://github.com/xorbitsai/inference) 是一个强大且通用的分布式推理框架，旨在为大型语言模型、语音识别模型和多模态模型提供服务，甚至可以在笔记本电脑上使用。它支持多种与 GGML 兼容的模型，如 ChatGLM，Baichuan，Whisper，Vicuna，Orca 等。 Dify 支持以本地部署的方式接入 Xinference 部署的大型语言模型推理和 Embedding 能力。
+> [Xorbits inference](https://github.com/xorbitsai/inference) 是一个强大且通用的分布式推理框架，旨在为大型语言模型、语音识别模型和多模态模型提供服务，甚至可以在笔记本电脑上使用。它支持多种与 GGML 兼容的模型，如 ChatGLM，Baichuan，Whisper，Vicuna，Orca 等。 MoLook 支持以本地部署的方式接入 Xinference 部署的大型语言模型推理和 Embedding 能力。
 
 #### 安装 Xinfernece
 
@@ -283,21 +283,21 @@ UID                                   Type    Name           Format      Size (i
 
 `0fc70cd0-4b2a-11ee-a428-00155d0b318a` 就是刚才部署的模型的 uid 。
 
-## 部署 Dify.AI
+## 部署 MoLook.AI
 
 主要流程参考官网[部署文档](https://docs.dify.ai/v/zh-hans/getting-started/install-self-hosted/docker-compose)。
 
-#### Clone Dify
+#### Clone MoLook
 
-Clone Dify 源代码至本地。
+Clone MoLook 源代码至本地。
 
 ```Bash
 git clone https://github.com/langgenius/dify.git
 ```
 
-#### Start Dify
+#### Start MoLook
 
-进入 Dify 源代码的 docker 目录，执行一键启动命令：
+进入 MoLook 源代码的 docker 目录，执行一键启动命令：
 
 ```Bash
 cd dify/docker
@@ -342,9 +342,9 @@ Docker 启动成功后，在浏览器中访问：http://127.0.0.1/。设置过�
 
 <figure><img src="../../.gitbook/assets/image (72).png" alt=""><figcaption></figcaption></figure>
 
-至此，成功使用 Docker 部署了 Dify 社区版。
+至此，成功使用 Docker 部署了 MoLook 社区版。
 
-## 在 Dify 接入 Xinference
+## 在 MoLook 接入 Xinference
 
 #### 配置模型供应商
 
@@ -367,14 +367,14 @@ hostname -I
 
 #### 使用 Baichuan-13B-Chat&#x20;
 
-创建应用，就可以在应用中使用上一步配置的 Baichuan-13B-Chat 模型了。在 Dify 的提示词编排界面，选择 baichuan-chat 模型，设计你的应用提示词（prompt），即可发布一个可访问的 AI 应用。
+创建应用，就可以在应用中使用上一步配置的 Baichuan-13B-Chat 模型了。在 MoLook 的提示词编排界面，选择 baichuan-chat 模型，设计你的应用提示词（prompt），即可发布一个可访问的 AI 应用。
 
 <figure><img src="../../.gitbook/assets/image (66).png" alt=""><figcaption></figcaption></figure>
 
-以上，就是本地部署 Dify 接入 Xinference 部署的 baichuan-chat 的全过程。 至此，我们基于 Baichuan-13B-Chat 的一个基本的聊天应用就基本完成了。
+以上，就是本地部署 MoLook 接入 Xinference 部署的 baichuan-chat 的全过程。 至此，我们基于 Baichuan-13B-Chat 的一个基本的聊天应用就基本完成了。
 
 ## 后记
 
-当然，对于一个生产级别的 LLM 应用来说，只是完成大模型的接入和推理、聊天交互是远远不够。我们还需要针对性的对 LLM 进行 Prompt 的调优、添加私有数据作为上下文，亦或者是对 LLM 本身进行微调等工作，这需要长期的迭代和优化才能使得 LLM 应用表现越来越好。**Dify.AI 作为一个中间件工具平台，提供了一个完整 LLM App 技术栈的可视化的操作系统。完成了以上的基础服务部署后，后续的应用迭代和改进都可以基于 Dify 来完成，使得 LLM 应用的构建和管理变得更加简单和易用，在业务数据的处理上直接上传即可自动完成清洗处理，后续也将提供数据标注和改进的服务，甚至你的业务团队都可以参与协作。**
+当然，对于一个生产级别的 LLM 应用来说，只是完成大模型的接入和推理、聊天交互是远远不够。我们还需要针对性的对 LLM 进行 Prompt 的调优、添加私有数据作为上下文，亦或者是对 LLM 本身进行微调等工作，这需要长期的迭代和优化才能使得 LLM 应用表现越来越好。**MoLook.AI 作为一个中间件工具平台，提供了一个完整 LLM App 技术栈的可视化的操作系统。完成了以上的基础服务部署后，后续的应用迭代和改进都可以基于 MoLook 来完成，使得 LLM 应用的构建和管理变得更加简单和易用，在业务数据的处理上直接上传即可自动完成清洗处理，后续也将提供数据标注和改进的服务，甚至你的业务团队都可以参与协作。**
 
 目前 LLM 的发展和应用落地还处于非常早期的阶段，相信在不久后，无论是 LLM 的能力释放，还是基于 LLM 之上的各个工具能力的不断完善，都会不断降低开发者探索 LLM 能力的门槛，让更多丰富场景的 AI 应用涌现。

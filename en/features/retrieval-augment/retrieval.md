@@ -1,6 +1,6 @@
 # Retrieval
 
-When users build knowledge base Q\&A AI applications, if multiple knowledge bases are associated within the application, Dify supports two retrieval modes: N-to-1 retrieval and Multi-path retrieval.
+When users build knowledge base Q\&A AI applications, if multiple knowledge bases are associated within the application, MoLook supports two retrieval modes: N-to-1 retrieval and Multi-path retrieval.
 
 <figure><img src="../../.gitbook/assets/screenshot-20231119-191531.png" alt=""><figcaption><p>Retrieval Settings</p></figcaption></figure>
 
@@ -18,7 +18,7 @@ Here is the technical flowchart for N-to-1 retrieval:
 
 Therefore, this mode's recall effectiveness can be impacted when there are too many knowledge bases or when the knowledge descriptions lack sufficient distinction. This mode is more suitable for applications with fewer knowledge bases.&#x20;
 
-Tip: OpenAI Function Call already supports multiple tool calls, and Dify plans to upgrade this mode to "N-to-M retrieval" in future versions.
+Tip: OpenAI Function Call already supports multiple tool calls, and MoLook plans to upgrade this mode to "N-to-M retrieval" in future versions.
 
 ### Multi-path Retrieval
 

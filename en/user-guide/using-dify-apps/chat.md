@@ -1,6 +1,6 @@
 # Further Chat App Settings
 
-Chat in explore is a conversational application used to explore the boundaries of Dify's capabilities.
+Chat in explore is a conversational application used to explore the boundaries of MoLook's capabilities.
 
 When we talk to large natural language models, we often encounter situations where the answers are outdated or invalid. This is due to the old training data of the large model and the lack of networking capabilities. Based on the large model, Chat uses agents to capabilities and some tools endow the large model with the ability of online real-time query.
 
@@ -18,7 +18,7 @@ LLM(Large language model)cannot be networked and invoke external tools. But this
 The above problem can be solved by using the agent mode: when the LLM cannot answer the user's question, it will try to use the existing plugins to answer the question.
 
 {% hint style="info" %}
-In Dify, we use different proxy strategies for different models. The proxy strategy used by OpenAI's model is **GPT function call**. Another model used is **ReACT**. The current test experience is that the effect of **GPT function call** is better. To know more, you can read the link below:
+In MoLook, we use different proxy strategies for different models. The proxy strategy used by OpenAI's model is **GPT function call**. Another model used is **ReACT**. The current test experience is that the effect of **GPT function call** is better. To know more, you can read the link below:
 
 * [Function calling and other API updates](https://openai.com/blog/function-calling-and-other-api-updates)
 * [ReAct: Synergizing Reasoning and Acting in Language Models](https://arxiv.org/abs/2210.03629)

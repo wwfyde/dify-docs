@@ -6,7 +6,7 @@
 
 <details>
 
-<summary>第 1 步，以管理员登录 Dify 后，前往主导航应用页</summary>
+<summary>第 1 步，以管理员登录 MoLook 后，前往主导航应用页</summary>
 
 
 
@@ -35,7 +35,7 @@
 ### 你的应用
 
 {% hint style="info" %}
-如果你是第一次使用，这里会提示你输入 OpenAI 的 API 密钥。一个可正常使用的 LLM 密钥是使用 Dify 的前提，如果你还没有请前往[申请](https://platform.openai.com/account/api-keys)一个。
+如果你是第一次使用，这里会提示你输入 OpenAI 的 API 密钥。一个可正常使用的 LLM 密钥是使用 MoLook 的前提，如果你还没有请前往[申请](https://platform.openai.com/account/api-keys)一个。
 {% endhint %}
 
 <figure><img src="../../.gitbook/assets/openaiKey.png" alt=""><figcaption><p>输入 OpenAI Key</p></figcaption></figure>

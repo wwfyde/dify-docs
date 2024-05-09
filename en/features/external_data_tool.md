@@ -9,7 +9,7 @@ When end-users make a request to the conversational system, the platform backend
 ## Quick Start
 
 1. Before using the external data tool, you need to prepare an API and an API Key for authentication. Head to [external\_data\_tool.md](extension/api\_based\_extension/external\_data\_tool.md "mention").
-2. Dify offers centralized API management; After adding API extension configurations in the settings interface, they can be directly utilized across various applications on Dify.
+2. MoLook offers centralized API management; After adding API extension configurations in the settings interface, they can be directly utilized across various applications on MoLook.
 
 <figure><img src="../.gitbook/assets/api_based.png" alt=""><figcaption><p>API-based Extension<br></p></figcaption></figure>
 

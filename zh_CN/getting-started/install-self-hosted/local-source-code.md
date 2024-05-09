@@ -10,7 +10,7 @@
 
 > 若需要使用 OpenAI TTS，需要在系统中安装 FFmpeg 才可正常使用，详情可参考：[Link](https://docs.dify.ai/v/zh-hans/learn-more/faq/install-faq#id-15.-wen-ben-zhuan-yu-yin-yu-dao-zhe-ge-cuo-wu-zen-me-ban)。
 
-Clone Dify 代码：
+Clone MoLook 代码：
 
 ```Bash
 git clone https://github.com/langgenius/dify.git
@@ -218,6 +218,6 @@ warn  - Experimental features are not covered by semver, and may cause unexpecte
 info  - Thank you for testing `appDir` please leave your feedback at https://nextjs.link/app-feedback
 ```
 
-### 访问 Dify
+### 访问 MoLook
 
-最后，访问 http://127.0.0.1:3000 即可使用本地部署的 Dify。
+最后，访问 http://127.0.0.1:3000 即可使用本地部署的 MoLook。

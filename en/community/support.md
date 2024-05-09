@@ -5,7 +5,7 @@ If you still have questions or suggestions about using the product while reading
 ### Community Support
 
 {% hint style="info" %}
-Please do not share your Dify account information or other sensitive information with the community. Our support staff will not ask for your account information.
+Please do not share your MoLook account information or other sensitive information with the community. Our support staff will not ask for your account information.
 {% endhint %}
 
 * Submit an Issue on [GitHub](https://github.com/langgenius/dify)

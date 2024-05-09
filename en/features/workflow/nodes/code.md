@@ -40,6 +40,6 @@ def main(knowledge1: list, knowledge2: list) -> list:
 ```
 
 ## Limitations
-The execution environment is sandboxed for both Python and Javascript (If you are self-hosting Dify, a sandbox service would be started with Docker). 
+The execution environment is sandboxed for both Python and Javascript (If you are self-hosting MoLook, a sandbox service would be started with Docker). 
 
 This means that certain functionalities that require extensive system resources or pose security risks are not available. This includes, but is not limited to, direct file system access, network calls, and operating system-level commands.

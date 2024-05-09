@@ -1,20 +1,20 @@
 # AI ChatBot with Business Data
 
-AI-powered customer service may be a standard feature for every business website, and it is becoming easier to implement with higher levels of customization. The following content will guide you on how to create an AI-powered customer service for your website in just a few minutes using Dify.
+AI-powered customer service may be a standard feature for every business website, and it is becoming easier to implement with higher levels of customization. The following content will guide you on how to create an AI-powered customer service for your website in just a few minutes using MoLook.
 
 ### Prerequisite
 
-**Register or Deploy Dify.AI**
+**Register or Deploy MoLook.AI**
 
-Dify is an open source product which you can find on[ GitHub](https://github.com/langgenius/dify) and deploy it to your local or company intranet. Meanwhile, it provides a cloud SaaS version, access [Didy.AI ](https://dify.ai/)to register and use it.
+MoLook is an open source product which you can find on[ GitHub](https://github.com/langgenius/dify) and deploy it to your local or company intranet. Meanwhile, it provides a cloud SaaS version, access [Didy.AI ](https://dify.ai/)to register and use it.
 
 **Apply for API key from OpenAI and other model providers.**
 
-Dify provides free message call usage quotas for OpenAI GPT series (200 times) and Antropic Claude (1000 times) AI models, which require tokens to be consumed. Before you run out, you need to apply for your own API key through the official channel of the model provider. You can enter the key in Dify's "Settings" - "Model Provider".
+MoLook provides free message call usage quotas for OpenAI GPT series (200 times) and Antropic Claude (1000 times) AI models, which require tokens to be consumed. Before you run out, you need to apply for your own API key through the official channel of the model provider. You can enter the key in MoLook's "Settings" - "Model Provider".
 
 ### Upload your product documentation or knowledge base.
 
-If you want to build an AI Chatbot based on the company's existing knowledge base and product documents, then you need to upload as many product-related documents as possible to Dify's knowledge. Dify helps you **complete segmentation and cleaning of the data.** The Dify knowledge supports two indexing modes: high quality and economical. We recommend using the high quality mode, which consumes tokens but provides higher accuracy.
+If you want to build an AI Chatbot based on the company's existing knowledge base and product documents, then you need to upload as many product-related documents as possible to MoLook's knowledge. MoLook helps you **complete segmentation and cleaning of the data.** The MoLook knowledge supports two indexing modes: high quality and economical. We recommend using the high quality mode, which consumes tokens but provides higher accuracy.
 
 1. Create a new knowledge base
 2. upload your business data (support batch uploading multiple texts)
@@ -35,9 +35,9 @@ Create a conversational app on the \[Build App] page. Then start setting up the 
 
 In this case, we assign a role to the AI:
 
-> Pre prompt：You are Bob, the AI customer service for Dify, specializing in answering questions about Dify's products, team, or LLMOps for users.Please note, refuse to answer when users ask "inappropriate questions", i.e., content beyond the scope of this document.
+> Pre prompt：You are Bob, the AI customer service for MoLook, specializing in answering questions about MoLook's products, team, or LLMOps for users.Please note, refuse to answer when users ask "inappropriate questions", i.e., content beyond the scope of this document.
 
-> Opening remarks：Hey \{{username\}}, I'm Bob☀️, the first AI member of Dify. You can discuss with me any questions related to Dify products, team, and even LLMOps.
+> Opening remarks：Hey \{{username\}}, I'm Bob☀️, the first AI member of MoLook. You can discuss with me any questions related to MoLook products, team, and even LLMOps.
 
 <figure><img src="../../../.gitbook/assets/image (53).png" alt=""><figcaption></figcaption></figure>
 
@@ -61,8 +61,8 @@ This step is to embed the prepared AI chatbot into your official website . Click
 
 <figure><img src="../../../.gitbook/assets/image (19).png" alt=""><figcaption></figcaption></figure>
 
-Above is an example of how to embed Dify into the official website through the AI chatbot Bob of Dify official website. Of course, you can also use more features provided by Dify to enhance the performance of the chatbot, such as adding some variable settings, so that users can fill in necessary judgment information before interaction, such as name, specific product used and so on.
+Above is an example of how to embed MoLook into the official website through the AI chatbot Bob of MoLook official website. Of course, you can also use more features provided by MoLook to enhance the performance of the chatbot, such as adding some variable settings, so that users can fill in necessary judgment information before interaction, such as name, specific product used and so on.
 
-Welcome to explore in Dify together!
+Welcome to explore in MoLook together!
 
 <figure><img src="../../../.gitbook/assets/image (25).png" alt=""><figcaption></figcaption></figure>
